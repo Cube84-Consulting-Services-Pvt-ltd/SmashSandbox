@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Supplier__c</fullName>
+    <externalId>false</externalId>
+    <label>Supplier</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Gusmer</fullName>
+                <default>false</default>
+                <label>Gusmer</label>
+            </value>
+            <value>
+                <fullName>ABER</fullName>
+                <default>false</default>
+                <label>ABER</label>
+            </value>
+            <value>
+                <fullName>BASF</fullName>
+                <default>false</default>
+                <label>BASF</label>
+            </value>
+            <value>
+                <fullName>Bucher-Unipektin</fullName>
+                <default>false</default>
+                <label>Bucher-Unipektin</label>
+            </value>
+            <value>
+                <fullName>Bucher-Vaslin</fullName>
+                <default>false</default>
+                <label>Bucher-Vaslin</label>
+            </value>
+            <value>
+                <fullName>Chr. Hansen</fullName>
+                <default>false</default>
+                <label>Chr. Hansen</label>
+            </value>
+            <value>
+                <fullName>DDW</fullName>
+                <default>false</default>
+                <label>DDW</label>
+            </value>
+            <value>
+                <fullName>Denwel</fullName>
+                <default>false</default>
+                <label>Denwel</label>
+            </value>
+            <value>
+                <fullName>DuPont</fullName>
+                <default>false</default>
+                <label>DuPont</label>
+            </value>
+            <value>
+                <fullName>FOSS</fullName>
+                <default>false</default>
+                <label>FOSS</label>
+            </value>
+            <value>
+                <fullName>Christian Gresser</fullName>
+                <default>false</default>
+                <label>Christian Gresser</label>
+            </value>
+            <value>
+                <fullName>Hamilton</fullName>
+                <default>false</default>
+                <label>Hamilton</label>
+            </value>
+            <value>
+                <fullName>Malek</fullName>
+                <default>false</default>
+                <label>Malek</label>
+            </value>
+            <value>
+                <fullName>MBT</fullName>
+                <default>false</default>
+                <label>MBT</label>
+            </value>
+            <value>
+                <fullName>Millipore</fullName>
+                <default>false</default>
+                <label>Millipore</label>
+            </value>
+            <value>
+                <fullName>Pacific Ozone</fullName>
+                <default>false</default>
+                <label>Pacific Ozone</label>
+            </value>
+            <value>
+                <fullName>Ponndorf</fullName>
+                <default>false</default>
+                <label>Ponndorf</label>
+            </value>
+            <value>
+                <fullName>PQ</fullName>
+                <default>false</default>
+                <label>PQ</label>
+            </value>
+            <value>
+                <fullName>Pure Malt</fullName>
+                <default>false</default>
+                <label>Pure Malt</label>
+            </value>
+            <value>
+                <fullName>Renaissance Yeast</fullName>
+                <default>false</default>
+                <label>Renaissance Yeast</label>
+            </value>
+            <value>
+                <fullName>Stellar Tan</fullName>
+                <default>false</default>
+                <label>Stellar Tan</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

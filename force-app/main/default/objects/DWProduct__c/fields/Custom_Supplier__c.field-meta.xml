@@ -1,0 +1,1244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Custom_Supplier__c</fullName>
+    <externalId>false</externalId>
+    <label>Custom Supplier</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>A &amp; M Industrial</fullName>
+                <default>false</default>
+                <label>A &amp; M Industrial</label>
+            </value>
+            <value>
+                <fullName>Aber Instruments</fullName>
+                <default>false</default>
+                <label>Aber Instruments</label>
+            </value>
+            <value>
+                <fullName>AB Vickers Limited</fullName>
+                <default>false</default>
+                <label>AB Vickers Limited</label>
+            </value>
+            <value>
+                <fullName>Acadian Seaplants Limited</fullName>
+                <default>false</default>
+                <label>Acadian Seaplants Limited</label>
+            </value>
+            <value>
+                <fullName>Accent Control Systems</fullName>
+                <default>false</default>
+                <label>Accent Control Systems</label>
+            </value>
+            <value>
+                <fullName>ACM GmbH</fullName>
+                <default>false</default>
+                <label>ACM GmbH</label>
+            </value>
+            <value>
+                <fullName>Action Automation &amp; Controls,</fullName>
+                <default>false</default>
+                <label>Action Automation &amp; Controls,</label>
+            </value>
+            <value>
+                <fullName>Adcor Industries Inc.</fullName>
+                <default>false</default>
+                <label>Adcor Industries Inc.</label>
+            </value>
+            <value>
+                <fullName>AEB Biochemical, USA</fullName>
+                <default>false</default>
+                <label>AEB Biochemical, USA</label>
+            </value>
+            <value>
+                <fullName>Aesys Technologies, LLC</fullName>
+                <default>false</default>
+                <label>Aesys Technologies, LLC</label>
+            </value>
+            <value>
+                <fullName>Ahlstrom Filtration, LLC</fullName>
+                <default>false</default>
+                <label>Ahlstrom Filtration, LLC</label>
+            </value>
+            <value>
+                <fullName>Airline Hydraulics Corp</fullName>
+                <default>false</default>
+                <label>Airline Hydraulics Corp</label>
+            </value>
+            <value>
+                <fullName>Air-Oil Systems</fullName>
+                <default>false</default>
+                <label>Air-Oil Systems</label>
+            </value>
+            <value>
+                <fullName>Airoyal Company</fullName>
+                <default>false</default>
+                <label>Airoyal Company</label>
+            </value>
+            <value>
+                <fullName>Allied Electronics, Inc.</fullName>
+                <default>false</default>
+                <label>Allied Electronics, Inc.</label>
+            </value>
+            <value>
+                <fullName>American Society of Brewing Ch</fullName>
+                <default>false</default>
+                <label>American Society of Brewing Ch</label>
+            </value>
+            <value>
+                <fullName>American Tartaric Products, In</fullName>
+                <default>false</default>
+                <label>American Tartaric Products, In</label>
+            </value>
+            <value>
+                <fullName>Amsco Technology Inc.</fullName>
+                <default>false</default>
+                <label>Amsco Technology Inc.</label>
+            </value>
+            <value>
+                <fullName>Angel Yeast (Hong Kong)Co., LT</fullName>
+                <default>false</default>
+                <label>Angel Yeast (Hong Kong)Co., LT</label>
+            </value>
+            <value>
+                <fullName>Antec, Inc.</fullName>
+                <default>false</default>
+                <label>Antec, Inc.</label>
+            </value>
+            <value>
+                <fullName>API Heat Transfer -</fullName>
+                <default>false</default>
+                <label>API Heat Transfer -</label>
+            </value>
+            <value>
+                <fullName>Applied Industrial Technologie</fullName>
+                <default>false</default>
+                <label>Applied Industrial Technologie</label>
+            </value>
+            <value>
+                <fullName>Applied use #50063</fullName>
+                <default>false</default>
+                <label>Applied use #50063</label>
+            </value>
+            <value>
+                <fullName>Archon Industries, Inc.</fullName>
+                <default>false</default>
+                <label>Archon Industries, Inc.</label>
+            </value>
+            <value>
+                <fullName>Argo International Corporation</fullName>
+                <default>false</default>
+                <label>Argo International Corporation</label>
+            </value>
+            <value>
+                <fullName>Armenta Hose &amp; Rubber Co., Inc</fullName>
+                <default>false</default>
+                <label>Armenta Hose &amp; Rubber Co., Inc</label>
+            </value>
+            <value>
+                <fullName>Arobois SA RL</fullName>
+                <default>false</default>
+                <label>Arobois SA RL</label>
+            </value>
+            <value>
+                <fullName>Ascension Industries, Inc.</fullName>
+                <default>false</default>
+                <label>Ascension Industries, Inc.</label>
+            </value>
+            <value>
+                <fullName>Atago U.S.A., Inc.</fullName>
+                <default>false</default>
+                <label>Atago U.S.A., Inc.</label>
+            </value>
+            <value>
+                <fullName>Barnstead International</fullName>
+                <default>false</default>
+                <label>Barnstead International</label>
+            </value>
+            <value>
+                <fullName>Barrel Builders</fullName>
+                <default>false</default>
+                <label>Barrel Builders</label>
+            </value>
+            <value>
+                <fullName>BASF Corporation</fullName>
+                <default>false</default>
+                <label>BASF Corporation</label>
+            </value>
+            <value>
+                <fullName>Bioseutica B.V</fullName>
+                <default>false</default>
+                <label>Bioseutica B.V</label>
+            </value>
+            <value>
+                <fullName>Boig &amp; Hill, Inc.</fullName>
+                <default>false</default>
+                <label>Boig &amp; Hill, Inc.</label>
+            </value>
+            <value>
+                <fullName>Brenntag Pacific, Inc.</fullName>
+                <default>false</default>
+                <label>Brenntag Pacific, Inc.</label>
+            </value>
+            <value>
+                <fullName>Brenntag Specialties</fullName>
+                <default>false</default>
+                <label>Brenntag Specialties</label>
+            </value>
+            <value>
+                <fullName>Brenntag Specialties, Inc.</fullName>
+                <default>false</default>
+                <label>Brenntag Specialties, Inc.</label>
+            </value>
+            <value>
+                <fullName>Brewers Supply Group</fullName>
+                <default>false</default>
+                <label>Brewers Supply Group</label>
+            </value>
+            <value>
+                <fullName>Brown-Forman Cooperage</fullName>
+                <default>false</default>
+                <label>Brown-Forman Cooperage</label>
+            </value>
+            <value>
+                <fullName>Bucher Unipektin AG</fullName>
+                <default>false</default>
+                <label>Bucher Unipektin AG</label>
+            </value>
+            <value>
+                <fullName>Bucher Vaslin Northamerica, In</fullName>
+                <default>false</default>
+                <label>Bucher Vaslin Northamerica, In</label>
+            </value>
+            <value>
+                <fullName>Bucher Vaslin S.A.</fullName>
+                <default>false</default>
+                <label>Bucher Vaslin S.A.</label>
+            </value>
+            <value>
+                <fullName>Buhler Inc.</fullName>
+                <default>false</default>
+                <label>Buhler Inc.</label>
+            </value>
+            <value>
+                <fullName>California Glass</fullName>
+                <default>false</default>
+                <label>California Glass</label>
+            </value>
+            <value>
+                <fullName>California Soda Company</fullName>
+                <default>false</default>
+                <label>California Soda Company</label>
+            </value>
+            <value>
+                <fullName>Canongate Technology Inc.</fullName>
+                <default>false</default>
+                <label>Canongate Technology Inc.</label>
+            </value>
+            <value>
+                <fullName>Canongate Technology Limited</fullName>
+                <default>false</default>
+                <label>Canongate Technology Limited</label>
+            </value>
+            <value>
+                <fullName>Cartons &amp; Crates Shipping Co.</fullName>
+                <default>false</default>
+                <label>Cartons &amp; Crates Shipping Co.</label>
+            </value>
+            <value>
+                <fullName>Centerline Machine</fullName>
+                <default>false</default>
+                <label>Centerline Machine</label>
+            </value>
+            <value>
+                <fullName>Central Supply Company</fullName>
+                <default>false</default>
+                <label>Central Supply Company</label>
+            </value>
+            <value>
+                <fullName>CHEMOMETEC Inc.</fullName>
+                <default>false</default>
+                <label>CHEMOMETEC Inc.</label>
+            </value>
+            <value>
+                <fullName>Chr. Hansen, Inc.</fullName>
+                <default>false</default>
+                <label>Chr. Hansen, Inc.</label>
+            </value>
+            <value>
+                <fullName>Christian Gresser Behaelter</fullName>
+                <default>false</default>
+                <label>Christian Gresser Behaelter</label>
+            </value>
+            <value>
+                <fullName>Climax Packaging Machinery</fullName>
+                <default>false</default>
+                <label>Climax Packaging Machinery</label>
+            </value>
+            <value>
+                <fullName>Climax Products Group</fullName>
+                <default>false</default>
+                <label>Climax Products Group</label>
+            </value>
+            <value>
+                <fullName>Coastal Chemical LLC</fullName>
+                <default>false</default>
+                <label>Coastal Chemical LLC</label>
+            </value>
+            <value>
+                <fullName>Coccitech SRL</fullName>
+                <default>false</default>
+                <label>Coccitech SRL</label>
+            </value>
+            <value>
+                <fullName>Cole-Parmer Instrument Company</fullName>
+                <default>false</default>
+                <label>Cole-Parmer Instrument Company</label>
+            </value>
+            <value>
+                <fullName>Comairco Equipment</fullName>
+                <default>false</default>
+                <label>Comairco Equipment</label>
+            </value>
+            <value>
+                <fullName>Confident Controls</fullName>
+                <default>false</default>
+                <label>Confident Controls</label>
+            </value>
+            <value>
+                <fullName>ContiTech North America</fullName>
+                <default>false</default>
+                <label>ContiTech North America</label>
+            </value>
+            <value>
+                <fullName>ContiTech North America, Inc.</fullName>
+                <default>false</default>
+                <label>ContiTech North America, Inc.</label>
+            </value>
+            <value>
+                <fullName>ContiTech Schlauch GmbH</fullName>
+                <default>false</default>
+                <label>ContiTech Schlauch GmbH</label>
+            </value>
+            <value>
+                <fullName>Coyle Strapping &amp; Supply Inc.</fullName>
+                <default>false</default>
+                <label>Coyle Strapping &amp; Supply Inc.</label>
+            </value>
+            <value>
+                <fullName>Creason Corrugating Company</fullName>
+                <default>false</default>
+                <label>Creason Corrugating Company</label>
+            </value>
+            <value>
+                <fullName>Crosby &amp; Baker</fullName>
+                <default>false</default>
+                <label>Crosby &amp; Baker</label>
+            </value>
+            <value>
+                <fullName>D.D. Williamson</fullName>
+                <default>false</default>
+                <label>D.D. Williamson</label>
+            </value>
+            <value>
+                <fullName>D.D.Williamson (UK)Ltd.</fullName>
+                <default>false</default>
+                <label>D.D.Williamson (UK)Ltd.</label>
+            </value>
+            <value>
+                <fullName>Danisco USA Inc.</fullName>
+                <default>false</default>
+                <label>Danisco USA Inc.</label>
+            </value>
+            <value>
+                <fullName>Denwel EU s.r.o</fullName>
+                <default>false</default>
+                <label>Denwel EU s.r.o</label>
+            </value>
+            <value>
+                <fullName>DSM Food Specialties USA, Inc.</fullName>
+                <default>false</default>
+                <label>DSM Food Specialties USA, Inc.</label>
+            </value>
+            <value>
+                <fullName>DuBois Chemicals - Johnson Div</fullName>
+                <default>false</default>
+                <label>DuBois Chemicals - Johnson Div</label>
+            </value>
+            <value>
+                <fullName>East Coast Warehouse &amp; Distrib</fullName>
+                <default>false</default>
+                <label>East Coast Warehouse &amp; Distrib</label>
+            </value>
+            <value>
+                <fullName>Ecco/Gregory, Inc.</fullName>
+                <default>false</default>
+                <label>Ecco/Gregory, Inc.</label>
+            </value>
+            <value>
+                <fullName>Ecolab</fullName>
+                <default>false</default>
+                <label>Ecolab</label>
+            </value>
+            <value>
+                <fullName>EMD Millipore Corporation</fullName>
+                <default>false</default>
+                <label>EMD Millipore Corporation</label>
+            </value>
+            <value>
+                <fullName>Enerfab, Inc.</fullName>
+                <default>false</default>
+                <label>Enerfab, Inc.</label>
+            </value>
+            <value>
+                <fullName>Enerquip, LLC</fullName>
+                <default>false</default>
+                <label>Enerquip, LLC</label>
+            </value>
+            <value>
+                <fullName>Engineered Cold Systems</fullName>
+                <default>false</default>
+                <label>Engineered Cold Systems</label>
+            </value>
+            <value>
+                <fullName>Equiptex Industrial Products C</fullName>
+                <default>false</default>
+                <label>Equiptex Industrial Products C</label>
+            </value>
+            <value>
+                <fullName>Ernst Flow Industries</fullName>
+                <default>false</default>
+                <label>Ernst Flow Industries</label>
+            </value>
+            <value>
+                <fullName>Ertel Alsop</fullName>
+                <default>false</default>
+                <label>Ertel Alsop</label>
+            </value>
+            <value>
+                <fullName>Esau &amp; Hueber GmbH</fullName>
+                <default>false</default>
+                <label>Esau &amp; Hueber GmbH</label>
+            </value>
+            <value>
+                <fullName>Esseco USA, LLC.</fullName>
+                <default>false</default>
+                <label>Esseco USA, LLC.</label>
+            </value>
+            <value>
+                <fullName>Evergreen Midwest Inc.</fullName>
+                <default>false</default>
+                <label>Evergreen Midwest Inc.</label>
+            </value>
+            <value>
+                <fullName>Faber Industrial Technologies</fullName>
+                <default>false</default>
+                <label>Faber Industrial Technologies</label>
+            </value>
+            <value>
+                <fullName>Ferco</fullName>
+                <default>false</default>
+                <label>Ferco</label>
+            </value>
+            <value>
+                <fullName>Filsol</fullName>
+                <default>false</default>
+                <label>Filsol</label>
+            </value>
+            <value>
+                <fullName>Filter &amp; Water Technologies</fullName>
+                <default>false</default>
+                <label>Filter &amp; Water Technologies</label>
+            </value>
+            <value>
+                <fullName>Fisher Scientific</fullName>
+                <default>false</default>
+                <label>Fisher Scientific</label>
+            </value>
+            <value>
+                <fullName>Fisher Scientific Company LLC</fullName>
+                <default>false</default>
+                <label>Fisher Scientific Company LLC</label>
+            </value>
+            <value>
+                <fullName>Fleischman&apos;s Yeast</fullName>
+                <default>false</default>
+                <label>Fleischman&apos;s Yeast</label>
+            </value>
+            <value>
+                <fullName>Flowserve US,Inc.</fullName>
+                <default>false</default>
+                <label>Flowserve US,Inc.</label>
+            </value>
+            <value>
+                <fullName>Foss North America</fullName>
+                <default>false</default>
+                <label>Foss North America</label>
+            </value>
+            <value>
+                <fullName>Fowler Products Co.</fullName>
+                <default>false</default>
+                <label>Fowler Products Co.</label>
+            </value>
+            <value>
+                <fullName>Friedrich &amp; Dimmock</fullName>
+                <default>false</default>
+                <label>Friedrich &amp; Dimmock</label>
+            </value>
+            <value>
+                <fullName>Funke-Dr.N.Gerber Labortechnik</fullName>
+                <default>false</default>
+                <label>Funke-Dr.N.Gerber Labortechnik</label>
+            </value>
+            <value>
+                <fullName>GCF, Inc.</fullName>
+                <default>false</default>
+                <label>GCF, Inc.</label>
+            </value>
+            <value>
+                <fullName>GECI Tech</fullName>
+                <default>false</default>
+                <label>GECI Tech</label>
+            </value>
+            <value>
+                <fullName>Gelita USA, Inc.</fullName>
+                <default>false</default>
+                <label>Gelita USA, Inc.</label>
+            </value>
+            <value>
+                <fullName>General Glassblowing</fullName>
+                <default>false</default>
+                <label>General Glassblowing</label>
+            </value>
+            <value>
+                <fullName>Glenn Electric Heater Corporat</fullName>
+                <default>false</default>
+                <label>Glenn Electric Heater Corporat</label>
+            </value>
+            <value>
+                <fullName>Grainger</fullName>
+                <default>false</default>
+                <label>Grainger</label>
+            </value>
+            <value>
+                <fullName>Graphic Controls</fullName>
+                <default>false</default>
+                <label>Graphic Controls</label>
+            </value>
+            <value>
+                <fullName>Great Western Chemical</fullName>
+                <default>false</default>
+                <label>Great Western Chemical</label>
+            </value>
+            <value>
+                <fullName>Grinnell Flow Control</fullName>
+                <default>false</default>
+                <label>Grinnell Flow Control</label>
+            </value>
+            <value>
+                <fullName>Hach Company</fullName>
+                <default>false</default>
+                <label>Hach Company</label>
+            </value>
+            <value>
+                <fullName>Haffmans North America, Inc.</fullName>
+                <default>false</default>
+                <label>Haffmans North America, Inc.</label>
+            </value>
+            <value>
+                <fullName>Hamilton Company</fullName>
+                <default>false</default>
+                <label>Hamilton Company</label>
+            </value>
+            <value>
+                <fullName>Hamrick Manufacturing &amp; Servic</fullName>
+                <default>false</default>
+                <label>Hamrick Manufacturing &amp; Servic</label>
+            </value>
+            <value>
+                <fullName>Hangzhou Cobetter Filtration</fullName>
+                <default>false</default>
+                <label>Hangzhou Cobetter Filtration</label>
+            </value>
+            <value>
+                <fullName>Hansen Technologies Corporatio</fullName>
+                <default>false</default>
+                <label>Hansen Technologies Corporatio</label>
+            </value>
+            <value>
+                <fullName>Hardy Diagnostics</fullName>
+                <default>false</default>
+                <label>Hardy Diagnostics</label>
+            </value>
+            <value>
+                <fullName>Hartness International</fullName>
+                <default>false</default>
+                <label>Hartness International</label>
+            </value>
+            <value>
+                <fullName>Hayes Pump, Inc.</fullName>
+                <default>false</default>
+                <label>Hayes Pump, Inc.</label>
+            </value>
+            <value>
+                <fullName>Headmaster Limited</fullName>
+                <default>false</default>
+                <label>Headmaster Limited</label>
+            </value>
+            <value>
+                <fullName>Heerema Company</fullName>
+                <default>false</default>
+                <label>Heerema Company</label>
+            </value>
+            <value>
+                <fullName>Heliport Systems, Inc.</fullName>
+                <default>false</default>
+                <label>Heliport Systems, Inc.</label>
+            </value>
+            <value>
+                <fullName>Hilliard Corporation</fullName>
+                <default>false</default>
+                <label>Hilliard Corporation</label>
+            </value>
+            <value>
+                <fullName>Honeywell Industry Solutions</fullName>
+                <default>false</default>
+                <label>Honeywell Industry Solutions</label>
+            </value>
+            <value>
+                <fullName>Ideal Stitcher Company</fullName>
+                <default>false</default>
+                <label>Ideal Stitcher Company</label>
+            </value>
+            <value>
+                <fullName>Imerys Talc America, Inc.</fullName>
+                <default>false</default>
+                <label>Imerys Talc America, Inc.</label>
+            </value>
+            <value>
+                <fullName>Independent Chemical Corporati</fullName>
+                <default>false</default>
+                <label>Independent Chemical Corporati</label>
+            </value>
+            <value>
+                <fullName>Independent Components, Inc.</fullName>
+                <default>false</default>
+                <label>Independent Components, Inc.</label>
+            </value>
+            <value>
+                <fullName>Industrial Controls Distributo</fullName>
+                <default>false</default>
+                <label>Industrial Controls Distributo</label>
+            </value>
+            <value>
+                <fullName>Ingersoll Rand</fullName>
+                <default>false</default>
+                <label>Ingersoll Rand</label>
+            </value>
+            <value>
+                <fullName>IPEC Consultants</fullName>
+                <default>false</default>
+                <label>IPEC Consultants</label>
+            </value>
+            <value>
+                <fullName>ISE, Inc.</fullName>
+                <default>false</default>
+                <label>ISE, Inc.</label>
+            </value>
+            <value>
+                <fullName>J. Rettenmaier USA LP</fullName>
+                <default>false</default>
+                <label>J. Rettenmaier USA LP</label>
+            </value>
+            <value>
+                <fullName>Jamison Door Company</fullName>
+                <default>false</default>
+                <label>Jamison Door Company</label>
+            </value>
+            <value>
+                <fullName>Jarchem Industries</fullName>
+                <default>false</default>
+                <label>Jarchem Industries</label>
+            </value>
+            <value>
+                <fullName>Jayson Company</fullName>
+                <default>false</default>
+                <label>Jayson Company</label>
+            </value>
+            <value>
+                <fullName>Jetco</fullName>
+                <default>false</default>
+                <label>Jetco</label>
+            </value>
+            <value>
+                <fullName>JRV Inc.</fullName>
+                <default>false</default>
+                <label>JRV Inc.</label>
+            </value>
+            <value>
+                <fullName>K. Connelly Corporation</fullName>
+                <default>false</default>
+                <label>K. Connelly Corporation</label>
+            </value>
+            <value>
+                <fullName>Kessler Thermometer</fullName>
+                <default>false</default>
+                <label>Kessler Thermometer</label>
+            </value>
+            <value>
+                <fullName>KLR Machines, Inc.</fullName>
+                <default>false</default>
+                <label>KLR Machines, Inc.</label>
+            </value>
+            <value>
+                <fullName>Komax Systems, Inc.</fullName>
+                <default>false</default>
+                <label>Komax Systems, Inc.</label>
+            </value>
+            <value>
+                <fullName>Krones, Inc.</fullName>
+                <default>false</default>
+                <label>Krones, Inc.</label>
+            </value>
+            <value>
+                <fullName>KSB,Inc.</fullName>
+                <default>false</default>
+                <label>KSB,Inc.</label>
+            </value>
+            <value>
+                <fullName>Labchem, Inc.</fullName>
+                <default>false</default>
+                <label>Labchem, Inc.</label>
+            </value>
+            <value>
+                <fullName>Laboratory Sales &amp; Service LLC</fullName>
+                <default>false</default>
+                <label>Laboratory Sales &amp; Service LLC</label>
+            </value>
+            <value>
+                <fullName>Lab Safety Supply</fullName>
+                <default>false</default>
+                <label>Lab Safety Supply</label>
+            </value>
+            <value>
+                <fullName>Lamothe-Abiet Pinosa</fullName>
+                <default>false</default>
+                <label>Lamothe-Abiet Pinosa</label>
+            </value>
+            <value>
+                <fullName>Latitude Ltd.</fullName>
+                <default>false</default>
+                <label>Latitude Ltd.</label>
+            </value>
+            <value>
+                <fullName>Lenze Americas</fullName>
+                <default>false</default>
+                <label>Lenze Americas</label>
+            </value>
+            <value>
+                <fullName>M &amp; M Stainless</fullName>
+                <default>false</default>
+                <label>M &amp; M Stainless</label>
+            </value>
+            <value>
+                <fullName>Madden Manufacturing, Inc.</fullName>
+                <default>false</default>
+                <label>Madden Manufacturing, Inc.</label>
+            </value>
+            <value>
+                <fullName>Magnetrol</fullName>
+                <default>false</default>
+                <label>Magnetrol</label>
+            </value>
+            <value>
+                <fullName>Malek Brautech GmbH</fullName>
+                <default>false</default>
+                <label>Malek Brautech GmbH</label>
+            </value>
+            <value>
+                <fullName>Manufacturers Edge Inc</fullName>
+                <default>false</default>
+                <label>Manufacturers Edge Inc</label>
+            </value>
+            <value>
+                <fullName>Marco Rubber and Plastic Inc.</fullName>
+                <default>false</default>
+                <label>Marco Rubber and Plastic Inc.</label>
+            </value>
+            <value>
+                <fullName>McMaster Carr Supply</fullName>
+                <default>false</default>
+                <label>McMaster Carr Supply</label>
+            </value>
+            <value>
+                <fullName>MDN Sales Associates, Inc.</fullName>
+                <default>false</default>
+                <label>MDN Sales Associates, Inc.</label>
+            </value>
+            <value>
+                <fullName>Metro Pump &amp; Systems Inc.</fullName>
+                <default>false</default>
+                <label>Metro Pump &amp; Systems Inc.</label>
+            </value>
+            <value>
+                <fullName>Mettler Toledo</fullName>
+                <default>false</default>
+                <label>Mettler Toledo</label>
+            </value>
+            <value>
+                <fullName>Micropure Filtration</fullName>
+                <default>false</default>
+                <label>Micropure Filtration</label>
+            </value>
+            <value>
+                <fullName>Miles Hardwood Mill</fullName>
+                <default>false</default>
+                <label>Miles Hardwood Mill</label>
+            </value>
+            <value>
+                <fullName>Miller &amp; Chitty Company, Inc.</fullName>
+                <default>false</default>
+                <label>Miller &amp; Chitty Company, Inc.</label>
+            </value>
+            <value>
+                <fullName>Miller Energy, Inc.</fullName>
+                <default>false</default>
+                <label>Miller Energy, Inc.</label>
+            </value>
+            <value>
+                <fullName>Millipore Corporation</fullName>
+                <default>false</default>
+                <label>Millipore Corporation</label>
+            </value>
+            <value>
+                <fullName>Modern Ice</fullName>
+                <default>false</default>
+                <label>Modern Ice</label>
+            </value>
+            <value>
+                <fullName>Monarch Electric Company</fullName>
+                <default>false</default>
+                <label>Monarch Electric Company</label>
+            </value>
+            <value>
+                <fullName>Nalco Company</fullName>
+                <default>false</default>
+                <label>Nalco Company</label>
+            </value>
+            <value>
+                <fullName>National Filter Media Corporat</fullName>
+                <default>false</default>
+                <label>National Filter Media Corporat</label>
+            </value>
+            <value>
+                <fullName>NEFF Engineering of Wisconsin</fullName>
+                <default>false</default>
+                <label>NEFF Engineering of Wisconsin</label>
+            </value>
+            <value>
+                <fullName>Neptune Chemical Pump Co</fullName>
+                <default>false</default>
+                <label>Neptune Chemical Pump Co</label>
+            </value>
+            <value>
+                <fullName>Neu-Ion, Inc.</fullName>
+                <default>false</default>
+                <label>Neu-Ion, Inc.</label>
+            </value>
+            <value>
+                <fullName>Newark Element14</fullName>
+                <default>false</default>
+                <label>Newark Element14</label>
+            </value>
+            <value>
+                <fullName>Newark Wire Cloth Company</fullName>
+                <default>false</default>
+                <label>Newark Wire Cloth Company</label>
+            </value>
+            <value>
+                <fullName>New Pig Corporation</fullName>
+                <default>false</default>
+                <label>New Pig Corporation</label>
+            </value>
+            <value>
+                <fullName>Nordson Corporation</fullName>
+                <default>false</default>
+                <label>Nordson Corporation</label>
+            </value>
+            <value>
+                <fullName>Northeast Technical Sales, Inc</fullName>
+                <default>false</default>
+                <label>Northeast Technical Sales, Inc</label>
+            </value>
+            <value>
+                <fullName>Novozymes North America, Inc.</fullName>
+                <default>false</default>
+                <label>Novozymes North America, Inc.</label>
+            </value>
+            <value>
+                <fullName>OenoBrands SAS</fullName>
+                <default>false</default>
+                <label>OenoBrands SAS</label>
+            </value>
+            <value>
+                <fullName>Optimum Filter</fullName>
+                <default>false</default>
+                <label>Optimum Filter</label>
+            </value>
+            <value>
+                <fullName>Pacific Ozone</fullName>
+                <default>false</default>
+                <label>Pacific Ozone</label>
+            </value>
+            <value>
+                <fullName>Pam Fastening Technology, Inc.</fullName>
+                <default>false</default>
+                <label>Pam Fastening Technology, Inc.</label>
+            </value>
+            <value>
+                <fullName>Parker Hannifin Corporation</fullName>
+                <default>false</default>
+                <label>Parker Hannifin Corporation</label>
+            </value>
+            <value>
+                <fullName>PCI Scientific Supply</fullName>
+                <default>false</default>
+                <label>PCI Scientific Supply</label>
+            </value>
+            <value>
+                <fullName>Pearson Packaging Systems</fullName>
+                <default>false</default>
+                <label>Pearson Packaging Systems</label>
+            </value>
+            <value>
+                <fullName>Pentair Flow Technologies</fullName>
+                <default>false</default>
+                <label>Pentair Flow Technologies</label>
+            </value>
+            <value>
+                <fullName>Perryville Stave Co.,Inc.</fullName>
+                <default>false</default>
+                <label>Perryville Stave Co.,Inc.</label>
+            </value>
+            <value>
+                <fullName>Phoenix Machine</fullName>
+                <default>false</default>
+                <label>Phoenix Machine</label>
+            </value>
+            <value>
+                <fullName>please use 51971 for Hamilton</fullName>
+                <default>false</default>
+                <label>please use 51971 for Hamilton</label>
+            </value>
+            <value>
+                <fullName>Polyphenolics</fullName>
+                <default>false</default>
+                <label>Polyphenolics</label>
+            </value>
+            <value>
+                <fullName>Ponndorf Anlagenbau GmbH</fullName>
+                <default>false</default>
+                <label>Ponndorf Anlagenbau GmbH</label>
+            </value>
+            <value>
+                <fullName>Potdevin Machine Company</fullName>
+                <default>false</default>
+                <label>Potdevin Machine Company</label>
+            </value>
+            <value>
+                <fullName>PQ Corporation</fullName>
+                <default>false</default>
+                <label>PQ Corporation</label>
+            </value>
+            <value>
+                <fullName>Precision Digital Corporation</fullName>
+                <default>false</default>
+                <label>Precision Digital Corporation</label>
+            </value>
+            <value>
+                <fullName>Presque Isle WIne Cellars</fullName>
+                <default>false</default>
+                <label>Presque Isle WIne Cellars</label>
+            </value>
+            <value>
+                <fullName>Processflo</fullName>
+                <default>false</default>
+                <label>Processflo</label>
+            </value>
+            <value>
+                <fullName>Progressive Hydraulics, Inc.</fullName>
+                <default>false</default>
+                <label>Progressive Hydraulics, Inc.</label>
+            </value>
+            <value>
+                <fullName>PureMalt Productions Ltd</fullName>
+                <default>false</default>
+                <label>PureMalt Productions Ltd</label>
+            </value>
+            <value>
+                <fullName>Ramco Innovations</fullName>
+                <default>false</default>
+                <label>Ramco Innovations</label>
+            </value>
+            <value>
+                <fullName>Ravago Chemical North America</fullName>
+                <default>false</default>
+                <label>Ravago Chemical North America</label>
+            </value>
+            <value>
+                <fullName>RD&amp;S, Inc.</fullName>
+                <default>false</default>
+                <label>RD&amp;S, Inc.</label>
+            </value>
+            <value>
+                <fullName>Recycling Equipment Corporatio</fullName>
+                <default>false</default>
+                <label>Recycling Equipment Corporatio</label>
+            </value>
+            <value>
+                <fullName>Renaissance Yeast Inc.</fullName>
+                <default>false</default>
+                <label>Renaissance Yeast Inc.</label>
+            </value>
+            <value>
+                <fullName>Ronan</fullName>
+                <default>false</default>
+                <label>Ronan</label>
+            </value>
+            <value>
+                <fullName>Ryan Herco Flow Solutions</fullName>
+                <default>false</default>
+                <label>Ryan Herco Flow Solutions</label>
+            </value>
+            <value>
+                <fullName>Ryan Herco Products Corp</fullName>
+                <default>false</default>
+                <label>Ryan Herco Products Corp</label>
+            </value>
+            <value>
+                <fullName>Saddle Brook Controls</fullName>
+                <default>false</default>
+                <label>Saddle Brook Controls</label>
+            </value>
+            <value>
+                <fullName>Scales Air Compressor</fullName>
+                <default>false</default>
+                <label>Scales Air Compressor</label>
+            </value>
+            <value>
+                <fullName>Schmidt Seeger</fullName>
+                <default>false</default>
+                <label>Schmidt Seeger</label>
+            </value>
+            <value>
+                <fullName>Seal-A-Tron</fullName>
+                <default>false</default>
+                <label>Seal-A-Tron</label>
+            </value>
+            <value>
+                <fullName>Sefar Filtration, Inc.</fullName>
+                <default>false</default>
+                <label>Sefar Filtration, Inc.</label>
+            </value>
+            <value>
+                <fullName>Sensient Flavors</fullName>
+                <default>false</default>
+                <label>Sensient Flavors</label>
+            </value>
+            <value>
+                <fullName>Shingle and gibb Company</fullName>
+                <default>false</default>
+                <label>Shingle and gibb Company</label>
+            </value>
+            <value>
+                <fullName>Sigma-Aldrich, Inc.</fullName>
+                <default>false</default>
+                <label>Sigma-Aldrich, Inc.</label>
+            </value>
+            <value>
+                <fullName>Smith Precision Products</fullName>
+                <default>false</default>
+                <label>Smith Precision Products</label>
+            </value>
+            <value>
+                <fullName>Soufflet Biotechnologies</fullName>
+                <default>false</default>
+                <label>Soufflet Biotechnologies</label>
+            </value>
+            <value>
+                <fullName>Spectrum Chemical Manufacturin</fullName>
+                <default>false</default>
+                <label>Spectrum Chemical Manufacturin</label>
+            </value>
+            <value>
+                <fullName>SPX Process Equipment</fullName>
+                <default>false</default>
+                <label>SPX Process Equipment</label>
+            </value>
+            <value>
+                <fullName>Standard Knapp, Inc.</fullName>
+                <default>false</default>
+                <label>Standard Knapp, Inc.</label>
+            </value>
+            <value>
+                <fullName>Strahman Valves, Inc.</fullName>
+                <default>false</default>
+                <label>Strahman Valves, Inc.</label>
+            </value>
+            <value>
+                <fullName>Superior Scale &amp; Instrument Co</fullName>
+                <default>false</default>
+                <label>Superior Scale &amp; Instrument Co</label>
+            </value>
+            <value>
+                <fullName>Sysmex America, Inc.</fullName>
+                <default>false</default>
+                <label>Sysmex America, Inc.</label>
+            </value>
+            <value>
+                <fullName>Terriss Consolidated Industrie</fullName>
+                <default>false</default>
+                <label>Terriss Consolidated Industrie</label>
+            </value>
+            <value>
+                <fullName>The Knotts Company</fullName>
+                <default>false</default>
+                <label>The Knotts Company</label>
+            </value>
+            <value>
+                <fullName>The Perlick Company</fullName>
+                <default>false</default>
+                <label>The Perlick Company</label>
+            </value>
+            <value>
+                <fullName>Thermo Fisher Scientific</fullName>
+                <default>false</default>
+                <label>Thermo Fisher Scientific</label>
+            </value>
+            <value>
+                <fullName>The Wittemann Company, Inc.</fullName>
+                <default>false</default>
+                <label>The Wittemann Company, Inc.</label>
+            </value>
+            <value>
+                <fullName>The Wright Group</fullName>
+                <default>false</default>
+                <label>The Wright Group</label>
+            </value>
+            <value>
+                <fullName>Tile Wholesalers of Newark</fullName>
+                <default>false</default>
+                <label>Tile Wholesalers of Newark</label>
+            </value>
+            <value>
+                <fullName>Triad Products Co.</fullName>
+                <default>false</default>
+                <label>Triad Products Co.</label>
+            </value>
+            <value>
+                <fullName>Turtle &amp; Hughes</fullName>
+                <default>false</default>
+                <label>Turtle &amp; Hughes</label>
+            </value>
+            <value>
+                <fullName>UDMC</fullName>
+                <default>false</default>
+                <label>UDMC</label>
+            </value>
+            <value>
+                <fullName>Univar USA</fullName>
+                <default>false</default>
+                <label>Univar USA</label>
+            </value>
+            <value>
+                <fullName>Univar USA Inc.</fullName>
+                <default>false</default>
+                <label>Univar USA Inc.</label>
+            </value>
+            <value>
+                <fullName>USG International Ltd.</fullName>
+                <default>false</default>
+                <label>USG International Ltd.</label>
+            </value>
+            <value>
+                <fullName>Valley Pipe &amp; Supply, Inc.</fullName>
+                <default>false</default>
+                <label>Valley Pipe &amp; Supply, Inc.</label>
+            </value>
+            <value>
+                <fullName>Valley Technical Sales</fullName>
+                <default>false</default>
+                <label>Valley Technical Sales</label>
+            </value>
+            <value>
+                <fullName>Van-Air &amp; Hydraulics, Inc.</fullName>
+                <default>false</default>
+                <label>Van-Air &amp; Hydraulics, Inc.</label>
+            </value>
+            <value>
+                <fullName>Vee Gee Scientific</fullName>
+                <default>false</default>
+                <label>Vee Gee Scientific</label>
+            </value>
+            <value>
+                <fullName>Vendome Copper &amp; Brass Works</fullName>
+                <default>false</default>
+                <label>Vendome Copper &amp; Brass Works</label>
+            </value>
+            <value>
+                <fullName>Vibra-Con</fullName>
+                <default>false</default>
+                <label>Vibra-Con</label>
+            </value>
+            <value>
+                <fullName>Vinibois</fullName>
+                <default>false</default>
+                <label>Vinibois</label>
+            </value>
+            <value>
+                <fullName>Vishay Transducers USA - Prod</fullName>
+                <default>false</default>
+                <label>Vishay Transducers USA - Prod</label>
+            </value>
+            <value>
+                <fullName>Vital Sensors Technologies</fullName>
+                <default>false</default>
+                <label>Vital Sensors Technologies</label>
+            </value>
+            <value>
+                <fullName>Volckening, Inc.</fullName>
+                <default>false</default>
+                <label>Volckening, Inc.</label>
+            </value>
+            <value>
+                <fullName>VWR International</fullName>
+                <default>false</default>
+                <label>VWR International</label>
+            </value>
+            <value>
+                <fullName>Wale Apparatus</fullName>
+                <default>false</default>
+                <label>Wale Apparatus</label>
+            </value>
+            <value>
+                <fullName>Warren Electric Corp</fullName>
+                <default>false</default>
+                <label>Warren Electric Corp</label>
+            </value>
+            <value>
+                <fullName>Westfalia Separator, Inc.</fullName>
+                <default>false</default>
+                <label>Westfalia Separator, Inc.</label>
+            </value>
+            <value>
+                <fullName>Zahm &amp; Nagel, Inc.</fullName>
+                <default>false</default>
+                <label>Zahm &amp; Nagel, Inc.</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

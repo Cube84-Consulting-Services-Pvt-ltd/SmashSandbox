@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Alternative Proteins</fullName>
+        <default>false</default>
+        <label>Alternative Proteins</label>
+    </customValue>
+    <customValue>
+        <fullName>Biopharmaceutical</fullName>
+        <default>false</default>
+        <label>Biopharmaceutical</label>
+    </customValue>
+    <customValue>
+        <fullName>Brewing</fullName>
+        <default>false</default>
+        <label>Brewing</label>
+    </customValue>
+    <customValue>
+        <fullName>Chemical / Specialty Chemical</fullName>
+        <default>false</default>
+        <label>Chemical / Specialty Chemical</label>
+    </customValue>
+    <customValue>
+        <fullName>Cider</fullName>
+        <default>false</default>
+        <label>Cider</label>
+    </customValue>
+    <customValue>
+        <fullName>Distilling</fullName>
+        <default>false</default>
+        <label>Distilling</label>
+    </customValue>
+    <customValue>
+        <fullName>Distributors</fullName>
+        <default>false</default>
+        <label>Distributors</label>
+    </customValue>
+    <customValue>
+        <fullName>Edible Oil</fullName>
+        <default>false</default>
+        <label>Edible Oil</label>
+    </customValue>
+    <customValue>
+        <fullName>Equipment</fullName>
+        <default>false</default>
+        <label>Equipment</label>
+    </customValue>
+    <customValue>
+        <fullName>Flavor and Fragrance</fullName>
+        <default>false</default>
+        <label>Flavor and Fragrance</label>
+    </customValue>
+    <customValue>
+        <fullName>Food</fullName>
+        <default>false</default>
+        <label>Food</label>
+    </customValue>
+    <customValue>
+        <fullName>Juice/Fruit</fullName>
+        <default>false</default>
+        <label>Juice/Fruit</label>
+    </customValue>
+    <customValue>
+        <fullName>Other Customer - No Market</fullName>
+        <default>false</default>
+        <label>Other Customer - No Market</label>
+    </customValue>
+    <customValue>
+        <fullName>Pharmaceutical</fullName>
+        <default>false</default>
+        <label>Pharmaceutical</label>
+    </customValue>
+    <customValue>
+        <fullName>Soft Drink</fullName>
+        <default>false</default>
+        <label>Soft Drink</label>
+    </customValue>
+    <customValue>
+        <fullName>Specialty Products</fullName>
+        <default>false</default>
+        <label>Specialty Products</label>
+    </customValue>
+    <customValue>
+        <fullName>Vendor</fullName>
+        <default>false</default>
+        <label>Vendor</label>
+    </customValue>
+    <customValue>
+        <fullName>Water</fullName>
+        <default>false</default>
+        <label>Water</label>
+    </customValue>
+    <customValue>
+        <fullName>Wine</fullName>
+        <default>false</default>
+        <label>Wine</label>
+    </customValue>
+    <customValue>
+        <fullName>Juice</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Juice</label>
+    </customValue>
+    <customValue>
+        <fullName>Juice/Fruit;Wine</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Juice/Fruit;Wine</label>
+    </customValue>
+    <customValue>
+        <fullName>NA</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>NA</label>
+    </customValue>
+    <customValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Other</label>
+    </customValue>
+    <customValue>
+        <fullName>Other;Specialty Products</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Other;Specialty Products</label>
+    </customValue>
+    <customValue>
+        <fullName>flavor</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>flavor</label>
+    </customValue>
+    <customValue>
+        <fullName>Specialty</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Specialty</label>
+    </customValue>
+    <customValue>
+        <fullName>Resale</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Resale</label>
+    </customValue>
+    <description>Market picklist to use on Accounts and Contacts</description>
+    <masterLabel>Market</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

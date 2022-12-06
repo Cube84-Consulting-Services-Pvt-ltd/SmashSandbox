@@ -1,0 +1,65 @@
+<aura:component controller="MyController1" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction,lightning:actionOverride" access="global">
+               
+    
+    
+    <aura:handler name="init" value="this" action="{!c.doInit}"/> 
+    
+    <aura:attribute name="oppdata" type="String" default="Test"/>
+    <aura:attribute name="soldcode" type="String" />
+    <aura:attribute name="AccountId" type="String" default=""/>
+     <aura:attribute name="AffiliateACCName" type="String" default=""/>
+    <aura:attribute name="test" type="String" />
+    
+    <!--  <aura:handler event="force:refreshView" action="{!c.isRefreshed}" /> -->
+    <aura:attribute name="StageName" type="String" />
+    <aura:attribute name="isAddProduct" type="Boolean" default="false"/>
+    <aura:attribute name="buttonVariant" type="String" default="neutral" />
+    <article class="slds-card">
+        <br/><br/>
+        
+        
+        
+        <lightning:recordEditForm aura:id="editForm" objectApiName="Ship_To_Affiliation__c"
+                                  recordTypeId="{!v.recordTypeId}"
+                                  onsuccess="{!c.handleSuccess}"
+                                  >
+            <lightning:messages />
+            <h3 class="slds-section-title--divider">Affiliation Information</h3>                       
+            <div class="slds-grid slds-gutters">      
+                <div class="slds-col">
+                    <div class="slds-size_1-of-2">
+                        
+                        <lightning:inputField fieldName="Name" required="true" style="" />
+                        <lightning:inputField fieldName="Account__c"  label="Account" value="{!v.AccountId}"  required="true"  style="">
+                        </lightning:inputField>
+                      <!--    <lightning:inputField fieldName="Aurora_Location__c" label="Location" style="">
+                        </lightning:inputField> -->
+                        
+                        <lightning:inputField fieldName="Ship_To_Code__c" label="Shipto"  value="{!v.soldcode}" onchange="{!c.handleAccountChange}" style="">
+                        </lightning:inputField>
+                       <lightning:inputField fieldName="Affiliated_Account_Name__c" label="Affiliated Account Name" value="{!v.AffiliateACCName}" style="">
+                        </lightning:inputField> 
+                   <!--     <lightning:inputField fieldName="Sold_To_Code__c" label="soldto"   value="{!v.soldcode}" style="">
+                        </lightning:inputField>
+                        <lightning:inputField fieldName="Different_Sold_To_Account__c" label="diff" style="">
+                        </lightning:inputField>
+                        <lightning:inputField fieldName="Different_Sold_To_Code__c" label="code"   style="">
+                        </lightning:inputField>  -->
+                        
+                    </div>
+                </div>
+                
+            </div>  
+            
+            <div class="slds-m-top_medium slds-text-align_center">
+                <Center>
+                    <lightning:button variant="brand" name="Save" label="Save" type="submit" />
+                    <lightning:button variant="neutral" type="cancel" name="cancel" label="Cancel" onclick="{!c.onCancel}"/>
+                    
+                    
+                </Center>
+            </div>
+        </lightning:recordEditForm>  
+        <lightning:navigation aura:id="navService"/>
+    </article>
+</aura:component>

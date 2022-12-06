@@ -1,0 +1,25 @@
+.THIS {
+}
+.THIS .slds-m-left_xx-large, .THIS .slds-m-left--xx-large {
+	margin-left: 0px !important;
+}
+.THIS .select-auto-width > .slds-form-element__control > .slds-select_container{
+    display: inline-block;
+    width:330px;
+}
+.THIS .img1{
+     padding-top: 0px;
+height: 0%;
+width : 0px;
+
+ margin: 0px 0px 0px 10px;
+
+    }
+.THIS .img2{
+     padding-top: 0px;
+height: 0%;
+width : 0px;
+
+ margin: 0px 30px 10px 0px;
+
+    }

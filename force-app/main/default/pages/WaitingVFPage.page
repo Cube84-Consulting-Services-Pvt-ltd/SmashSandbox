@@ -1,0 +1,5 @@
+<apex:page standardController="Quote" extensions="waitingController" lightningStylesheets="true">
+    <apex:form id="counter">
+      <apex:actionPoller action="{!incrementCounter}" reRender="counter" interval="5" enabled="{!isEnabled}"/> 
+    </apex:form>
+</apex:page>

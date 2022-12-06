@@ -1,0 +1,362 @@
+<apex:page standardController="Opportunity" extensions="OpportunityDWProductEntryExtension_DEV"  lightningStylesheets="true" id="pg">
+     <head>
+      <meta charset="utf-8" />
+        <meta http-equiv="x-ua-compatible" content="ie=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <!-- Import the Design System style sheet -->
+      <apex:slds />
+    </head> 
+   
+    <apex:sectionHeader Title="Manage {!$ObjectType.Product2.LabelPlural}" subtitle="{!opportunity.Name}"/>
+    <apex:messages />
+    
+    <style>
+        .search{
+            font-size:14pt;
+            margin-right: 20px;    
+        }
+        .fyi{
+            color:red;
+            font-style:italic;
+        }
+        .label{
+            margin-right:10px;
+            font-weight:bold;
+        }
+        .buttoncls{
+            background-color: #337ab7;
+            border-color: #2e6da4;     
+        }
+
+    </style>
+     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <apex:includeScript value="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"/>
+
+    <script type='text/javascript'>
+       $j = jQuery.noConflict();
+         
+    function checkboxChanged(checkbox) {
+        // Get the name of the checkbox which changed
+        var changedCheckboxId = $j(checkbox).attr('name');            
+             
+        // Get all checkboxes
+        $j(":checkbox[data-cbType='mainContactCheckbox']").each(function(index) {
+             
+            // Set all checkboxes EXCEPT the recently changed one to be unchecked
+            if (changedCheckboxId != $j(this).attr('name')) {
+                    $j(this).attr('checked', false);
+            }
+        });
+    };
+    
+    
+        $(document).keypress(function (e) {
+                if (e.which == 13 || event.keyCode == 13) {
+                    event.preventDefault();
+                }
+            });
+    
+        // This script assists the search bar functionality
+        // It will execute a search only after the user has stopped typing for more than 1 second
+        // To raise the time between when the user stops typing and the search, edit the following variable:
+        
+        var waitTime = 1;
+        
+    
+        var countDown = waitTime+1;
+        var started = false;
+        document.addEventListener("DOMContentLoaded", function(){
+        var myVar2 = setTimeout(intialPosition, 700);
+        });
+        function calltimer(){
+           var myVar = setTimeout(intialPosition, 700);
+        }
+           function intialPosition(){
+            var obj = '{!shoppingCartwithDW.SIZE}';
+            console.log(obj);
+            
+           if(obj==0)
+           {
+               document.documentElement.scrollTop =getOffset(document.getElementById('insidePb')).top; 
+           }
+           }
+        function resetTimer(){
+        
+            countDown=waitTime+1;
+            
+            if(started==false){
+                started=true;
+                runCountDown();
+            }
+        }
+        
+        function runCountDown(){
+        
+            countDown--;
+            
+            if(countDown<=0){
+                fetchResults();
+                started=false;
+                intialPosition();
+            }
+            else{
+                window.setTimeout(runCountDown,1000);
+            }
+        }
+    function Totals(c,d)
+    {
+
+        if((d.indexOf('Quantity') >=0 || d.indexOf('UnitPrice') >=0 || d.indexOf('Discount')>=0) )
+        {
+            
+            //refreshTotals(c);
+        }
+    }
+
+    function scrollFun(passedvalue){
+        var a = parseInt(passedvalue) ;
+        if(a>2){
+        document.documentElement.scrollTop =getOffset(document.getElementById('scrollDiv'+String(a-2))).top;
+        }else{
+           document.documentElement.scrollTop =getOffset(document.getElementById('pageBlock')).top; 
+        }
+    }
+    
+    function getOffset(el) {
+      const rect = el.getBoundingClientRect();
+      return {
+        left: rect.left + window.scrollX,
+        top: rect.top + window.scrollY
+      };
+    }  
+    function convertToNumber(idval, numberval){
+        document.getElementById(idval).innerHTML = new Intl.NumberFormat().format(numberval);
+    }
+    </script>
+   
+  
+    <apex:form id="fm">
+     <div class="slds-scope">
+        <apex:outputPanel id="mainBody">
+            <br/>
+            <!-- not everyone is using multi-currency, so this section may or may not show -->
+            <apex:outputPanel rendered="{!multipleCurrencies}">
+                <apex:outputLabel styleClass="label">Currency: </apex:outputLabel>
+                <apex:outputText value="{!chosenCurrency}"/>
+                <br/>
+            </apex:outputPanel>
+            <br/>
+            <div id="pageBlock">
+            </div>
+<!-- this is the upper table... a.k.a. the "Shopping Cart"-->
+
+            <!-- notice we use a lot of $ObjectType merge fields... I did that because if you have changed the labels of fields or objects it will reflect your own lingo -->
+            <apex:pageBlock title="Selected {!$ObjectType.Product2.LabelPlural}" id="selected">
+                <apex:pageMessages id="showmsg"></apex:pageMessages>
+                <apex:variable var="i" value="{!0}"/>
+                 <apex:outputPanel id="mainpro">
+                <apex:pageBlockTable value="{!shoppingCartwithDW}" var="s">
+                    <apex:column >
+                        <apex:commandLink value="Clone" action="{!cloneProduct}" reRender="selected,searchResults" status="searchStatus">
+                            <!-- this param is how we send an argument to the controller, so it knows which row we clicked 'remove' on -->
+                            <apex:param value="{!s.rowId}" name="index"/>
+                        </apex:commandLink> |
+                        <apex:commandLink value=" Remove" action="{!removeFromShoppingCart}" reRender="selected,searchResults" status="searchStatus" >
+                            <!-- this param is how we send an argument to the controller, so it knows which row we clicked 'remove' on -->
+                            <apex:param value="{!s.rowId}" name="index"/>
+                        </apex:commandLink>
+                    </apex:column>
+                <!--    <apex:column headervalue="Primary Product">
+       					 <apex:inputcheckbox value="{!s.dwOpptyProd.Primary__c}" html-data-cbType="mainContactCheckbox">
+                              <apex:actionSupport event="onclick" reRender="selected"  onSubmit="checkboxChanged(this)">
+                              
+                            </apex:actionSupport>
+                		</apex:inputcheckbox>
+   				 </apex:column> -->
+                                  <apex:column headerValue="Product Name">
+                        <apex:outputField value="{!s.dwOpptyProd.Name}" rendered="{!IF(s.isDWline,true,false)}"/>
+                         </apex:column>
+                    <apex:column headerValue="Quantity" >
+                        <apex:inputField value="{!s.dwOpptyProd.Quantity__c}" required="true" rendered="{!IF(s.isDWline,true,false)}" >
+                            <apex:actionSupport action="{!quantityChange}" event="onchange" rerender="selected" status="searchStatus">
+                                <apex:param value="{!s.dwOpptyProd.Quantity__c}" assignTo="{!qty}" name="qty"/>
+                                <apex:param value="{!s.dwOpptyProd.DWProduct__c}" assignTo="{!productId}" name="productId"/>
+                                <apex:param value="{!s.rowId}" name="index"/>
+                            </apex:actionSupport>
+                        </apex:inputField>
+                        <apex:actionRegion >
+                        <apex:inputField value="{!s.oli.Quantity}" required="true" rendered="{!IF(s.isOpptyLine,true,false)}" onchange="calc('{!s.rowId}');return false;">
+                            <apex:actionSupport action="{!quantityChangeOnOpptyProd}" event="onchange" reRender="selected" status="searchStatus">
+                                <apex:param value="{!s.rowId}" name="index"/>
+                            </apex:actionSupport>
+                        </apex:inputField>
+                        </apex:actionRegion>
+                    </apex:column>
+                        <apex:column headerValue="{!$ObjectType.OpportunityLineItem.Fields.UnitPrice.Label}">
+                        <apex:inputField value="{!s.dwOpptyProd.UnitPrice__c}" required="true" rendered="{!IF(s.isDWline,true,false)}">
+                      <apex:actionSupport action="{!unitChangeOnOpptyProd}" event="onchange" rerender="selected" status="searchStatus">
+                                <apex:param value="{!s.dwOpptyProd.UnitPrice__c}" assignTo="{!qty}" name="qty"/>
+                                <apex:param value="{!s.dwOpptyProd.DWProduct__c}" assignTo="{!productId}" name="productId"/>
+                                <apex:param value="{!s.rowId}" name="index"/>
+                            </apex:actionSupport>
+                           </apex:inputField> 
+                            <apex:actionRegion >
+                        <apex:inputField value="{!s.oli.Quantity}" required="true" rendered="{!IF(s.isOpptyLine,true,false)}" onchange="calc('{!s.rowId}');return false;">
+                            <apex:actionSupport action="{!unitChangeOnOpptyProd}" event="onchange" reRender="selected" status="searchStatus">
+                                <apex:param value="{!s.rowId}" name="index"/>
+                            </apex:actionSupport>
+                        </apex:inputField>
+                        </apex:actionRegion>
+                    </apex:column>
+                    
+                     <apex:column headervalue="Primary Product">
+       					 <apex:inputcheckbox value="{!s.dwOpptyProd.Primary__c}" html-data-cbType="mainContactCheckbox"  rendered="{!IF(s.isDWline,true,false)}">
+                              <apex:actionSupport event="onclick" reRender="selected"  onSubmit="checkboxChanged(this)">
+                              
+                            </apex:actionSupport>
+                		</apex:inputcheckbox>
+   				 </apex:column>
+                    
+                    <apex:column headerValue="{!$ObjectType.OpportunityLineItem.Fields.Subtotal.Label}">
+                        <apex:variable var="subTotal" value="{!(s.dwOpptyProd.UnitPrice__c *s.dwOpptyProd.Quantity__c)}" rendered="{!IF(s.isDWline,true,false)}"/>
+                        <!--<apex:variable var="subTotal" value="{!(s.oli.UnitPrice *s.oli.Quantity)}" rendered="{!IF(s.isOpptyLine,true,false)}"/>-->
+                        <apex:outputText value="{!subTotal}"/>
+                    </apex:column>
+                  <!--  <apex:column headerValue="{!$ObjectType.OpportunityLineItem.Fields.TotalPrice__c.Label}">
+                    </apex:column> -->
+                    <apex:column headerValue="Comments">
+                      <!--    <apex:inputField value="{!s.oli.Grade__c}" rendered="{!IF(s.isOpptyLine,true,false)}"/>-->
+                        <apex:inputField value="{!s.dwOpptyProd.Grade__c}" rendered="{!IF(s.isDWline,true,false)}"/>
+                    </apex:column>
+                </apex:pageBlockTable>
+                     </apex:outputPanel>
+                <apex:pageBlockButtons styleClass="slds-button" location="bottom">
+                    <apex:commandButton action="{!onSave}" value="Save" styleClass="slds-button slds-button_outline-brand" style="color: #fff;  background-color: rgb(162, 226, 147);border-color: rgb(162, 226, 147)"/>
+                    <apex:commandButton action="{!onSaveAddQuotes}" value="Save & Create Quote" styleClass="slds-button slds-button_outline-brand" style="color: #fff;  background-color: rgb(162, 226, 147);border-color: rgb(162, 226, 147)"/>
+                    <apex:commandButton action="{!onCancel}" value="Cancel" immediate="true" styleClass="slds-button slds-button_outline-brand" style="color: #fff; background-color: #6f706d; border-color: #6f706d;"/>
+                </apex:pageBlockButtons>
+            </apex:pageBlock>
+             
+            <!--<apex:actionFunction action="{!refreshTotals}" name="refreshTotals" rerender="fm,searchResults" Status="searchStatus">
+                <apex:param name="index"  value="" />
+            </apex:actionFunction>
+            <apex:actionFunction action="{!TotalPriceChange}" name="TotalPriceChange" rerender="fm,searchResults" Status="searchStatus">
+                <apex:param name="index"  value="" />
+            </apex:actionFunction>-->  
+<!-- this is the lower table: search bar and search results -->
+    
+            <apex:pageBlock >
+                <!-- styleClass="search" -->
+                  <apex:outputPanel id="pro">
+                <apex:actionRegion renderRegionOnly="false" immediate="true">
+                    <apex:actionFunction name="fetchResults" action="{!updateAvailableList}"  status="searchStatus" reRender="searchResults,op" />
+                    <!-- here we invoke the scripting to get out fancy 'no button' search bar to work 
+                    onkeydown="if(event.keyCode==13){this.blur();}else{resetTimer();}" -->
+                    <div id="insidePb"></div>
+                    <div class="slds-grid  slds-grid_align-space ">
+                    <div class=" slds-col ">
+                    <apex:outputPanel >
+                    Search for {!$ObjectType.Product2.LabelPlural}
+                    </apex:outputPanel>  
+                    <apex:inputText id="my" value="{!searchString}" style="width:300px" onkeyup="resetTimer();"/>
+    
+                    </div>
+                <!--    <div class="slds-col ">
+                    <apex:OutputLabel >{!$ObjectType.Product2.Fields.Curriculum__c.Label} &nbsp;</apex:OutputLabel>
+                    <apex:inputField value="{!search.Curriculum__c}" onChange="resetTimer();"/>    
+                    </div> -->
+                    <div class="slds-col ">
+                    <apex:OutputLabel >{!$ObjectType.DWProduct__c.Fields.Custom_Family__c.Label}</apex:OutputLabel>
+                      <apex:inputField value="{!search1.Custom_Family__c}" onChange="resetTimer();"/>
+                 <!--   <apex:inputText id="searchFamily" value="{!searchFamily}" style="width:300px" onkeyup="resetTimer();"/> -->
+                    </div>
+                         <div class="slds-col ">
+                    <apex:OutputLabel >{!$ObjectType.DWProduct__c.Fields.Custom_Supplier__c.Label}</apex:OutputLabel>
+                    <apex:inputField value="{!search1.Custom_Supplier__c}" onChange="resetTimer();"/> 
+                    </div>
+                    <div class="slds-col">
+                           &nbsp;
+                            <apex:commandButton value="Reset Filters" styleClass="slds-button slds-button_destructive" action="{!clearfilter}"  reRender="searchResults,op,pro" oncomplete="intialPosition();" status="searchStatus"/> 
+                    </div>
+                   </div>
+                 </apex:actionRegion>
+            </apex:outputPanel>  
+                <br/>
+                <br/>
+            
+                <apex:outputPanel id="searchResults">
+                    <apex:pageBlockTable value="{!availableProductsWithDW}" var="b" >  
+                      
+                        <apex:column headerValue="{!$ObjectType.Product2.Fields.Name.Label}">
+                           <!-- <apex:outputField value="{!b.pbe.Product2.Name}" rendered="{!IF(b.isPBE,true,false)}"/> -->
+                            <apex:outputField value="{!b.dwPBE.DWProduct__r.ITEM_DESCRIPTION__c}" rendered="{!IF(b.isDWpbe,true,false)}"/>
+                        </apex:column>
+                        <apex:column headerValue="{!$ObjectType.Product2.Fields.ProductCode.Label}">
+                            <apex:outputField value="{!b.dwPBE.DWProduct__r.ITEM__c}" rendered="{!IF(b.isDWpbe,true,false)}"/>
+                             <!--<apex:outputField value="{!b.pbe.Product2.ProductCode}" rendered="{!IF(b.isPBE,true,false)}"/> -->
+                        </apex:column>
+                        <apex:column headerValue="{!$ObjectType.Product2.Fields.Family.Label}">
+                            <apex:outputField value="{!b.dwPBE.DWProduct__r.PRODUCT_GROUP__c}" rendered="{!IF(b.isDWpbe,true,false)}"/>
+                            <!-- <apex:outputField value="{!b.pbe.Product2.Family}"  rendered="{!IF(b.isPBE,true,false)}"/> -->
+                        </apex:column>
+                        
+                        <!-- New cloumn -->
+                        
+                        <apex:column headerValue="Product Type">
+                             <apex:outputField value="{!b.dwPBE.DWProduct__r.PRODUCT_TYPE__c}"  rendered="{!IF(b.isDWpbe,true,false)}"/>
+                        </apex:column>
+                         <!-- <apex:column headerValue="Product Supplier">
+                             <apex:outputField value="{!b.dwPBE.DWProduct__r.PRODUCT_TYPE__c}"  rendered="{!IF(b.isDWpbe,true,false)}"/>
+                        </apex:column>  -->
+                         <apex:column headerValue="Product Supplier">
+                             <apex:outputField value="{!b.dwPBE.DWProduct__r.PRODUCT_SUPPLIER__c}"  rendered="{!IF(b.isDWpbe,true,false)}"/>
+                        </apex:column>
+                        
+                       <!--  <apex:column headerValue="{!$ObjectType.Product2.Fields.Supplier__c.Label}">
+                             <apex:outputField value="{!b.pbe.Product2.Supplier__c}"  rendered="{!IF(b.isPBE,true,false)}"/>
+                        </apex:column> -->
+                      <!--  <apex:column headerValue="{!$ObjectType.Product2.Fields.Manufactured__c.Label}">
+                           <apex:outputField value="{!b.pbe.Product2.Manufactured__c}"  rendered="{!IF(b.isPBE,true,false)}"/>
+                        </apex:column>
+                        <apex:column headerValue="{!$ObjectType.Product2.Fields.Resale__c.Label}">
+                             <apex:outputField value="{!b.pbe.Product2.Resale__c}"  rendered="{!IF(b.isPBE,true,false)}"/>
+                        </apex:column> -->
+                        <!--<apex:column headerValue="Product/DW Product">
+                            <apex:outputText value="{!b.productObjectType}"/>
+                        </apex:column> value="{!'Select this '+b.productObjectType}" -->
+                        <apex:column >
+                            <!-- command button in a column... neato -->
+                            <apex:commandButton value="Select this Product" action="{!addToShoppingCart}" reRender="selected,showmsg,searchResults,mainpro,op" immediate="true" styleClass="slds-button slds-button_outline-brand" style="border-color: #4caf50;" oncomplete="scrollFun('{!shoppingCartwithDW.SIZE}');" status="searchStatus">
+                                <!-- again we use apex:param to be able to tell the controller which row we are working with -->
+                                <apex:param value="{!b.Id}" assignTo="{!toSelect}" name="toSelect"/>
+                            </apex:commandButton>
+                        </apex:column>
+                    </apex:pageBlockTable>
+                                    
+                    <!-- We put up a warning if results exceed 100 rows -->
+                    <apex:outputPanel styleClass="fyi" rendered="{!overLimit}">
+                        <br/>
+                        Your search returned over 100 results, use a more specific search string if you do not see the desired {!$ObjectType.Product2.Label}.
+                        <br/>
+                    </apex:outputPanel>
+                    
+                </apex:outputPanel>
+            
+            </apex:pageBlock>
+            <div id="scrollblock"/>
+        <apex:outputPanel id="op"> 
+         <apex:actionStatus id="searchStatus" >
+            <apex:facet name="start">
+                <div class="slds-spinner_container" style="position: fixed;" >
+                    <div role="status" class="slds-spinner slds-spinner--large slds-spinner--brand">
+                        <div class="slds-spinner__dot-a"></div>
+                        <div class="slds-spinner__dot-b"></div>
+                    </div>
+                </div>
+            </apex:facet>
+        </apex:actionStatus>     
+        </apex:outputPanel>   
+        </apex:outputPanel>
+        </div>
+    </apex:form>
+</apex:page>

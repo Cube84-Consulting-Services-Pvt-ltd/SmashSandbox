@@ -1,0 +1,83 @@
+<apex:page standardController="Quote" extensions="AddDWQuoteController_Dev" lightningStylesheets="true">
+        <apex:slds />
+     <html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" lang="en">
+          <head>
+    <style>
+        .head {
+         font-size: 85%;
+        }
+        .slds-scope .slds-icon-standard-account{
+           font-family: 'Salesforce Sans',Arial,sans-serif;
+       
+        line-height: 1.5;
+        <!--  background: rgba(176, 196, 223, 1);
+        color: rgb(22, 50, 92); -->
+        -webkit-tap-highlight-color: transparent;
+        }
+        }
+        
+    </style>
+              
+              
+         </head>  </html>
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> 
+    <script type="text/javascript">
+        function onCompleteJSFunc(){
+        	CallApexMethod();
+    	}
+     
+    </script>
+    <apex:form id="theForm">
+          <apex:pageMessages ></apex:pageMessages>
+          
+        <apex:pageBlock title="New Quotes">
+             <apex:pageBlockButtons location="bottom" >
+                <apex:commandButton value="Cancel" action="{!Cancel}" />
+                <apex:commandButton value="Save" action="{!save}" oncomplete="onCompleteJSFunc();"/>
+                 <apex:commandButton value="Save Quote and Download PDF" action="{!save1}" oncomplete="onCompleteJSFunc();"/>
+            </apex:pageBlockButtons>
+            <apex:pageBlockSection collapsible="true" title="Quote Information" columns="2">
+                <apex:inputField value="{!Quote.name}"/>
+                <apex:inputField value="{!Quote.ExpirationDate}"/>
+                <apex:inputField value="{!Quote.OpportunityID}"/>
+                  <!--   <apex:inputtext value="{!inputText2}"  />  
+                       <br /> -->
+                <apex:inputField value="{!Quote.IsSyncing}"/>
+                 <apex:inputField value="{!theoppid.AccountID}"/>
+                <apex:inputField value="{!Quote.Status}"/>
+                 <apex:inputField value="{!Quote.Division_NA__c}"/>
+                <apex:inputField value="{!Quote.Description}"/>
+                <apex:inputField value="{!Quote.Shipping_Terms__c}"/>
+                  <apex:outputText > &nbsp;</apex:outputText> 
+                <apex:inputField value="{!Quote.Payment_Terms__c}"/>
+                  <apex:outputText > &nbsp;</apex:outputText> 
+                <apex:inputField value="{!Quote.Effective_Date__c}"/>
+                  <apex:outputText > &nbsp;</apex:outputText> 
+            </apex:pageBlockSection>
+             <apex:pageBlockSection collapsible="true" title="Totals" columns="2">
+                  <apex:inputField value="{!Quote.Subtotal}"/>
+                  <apex:outputText > &nbsp;</apex:outputText> 
+                  <apex:inputField value="{!Quote.TotalPrice}"/>
+                  <apex:inputField value="{!Quote.GrandTotal}"/>
+            </apex:pageBlockSection>
+            <apex:pageBlockSection collapsible="true" title="Address Information" columns="2">
+                  <apex:inputField value="{!Quote.BillingName}"/>
+                  <apex:inputField value="{!Quote.ShippingName}"/>
+                <apex:inputField value="{!Quote.BillingStreet}"/>
+                 <apex:inputField value="{!Quote.ShippingStreet}"/>
+                <apex:inputField value="{!Quote.BillingCity}"/>
+                 <apex:inputField value="{!Quote.ShippingCity}"/>
+                 <apex:inputField value="{!Quote.BillingState}"/>
+                 <apex:inputField value="{!Quote.ShippingState}"/>
+                <apex:inputField value="{!Quote.BillingPostalCode}"/>
+                <apex:inputField value="{!Quote.ShippingPostalCode}"/>
+                <apex:inputField value="{!Quote.BillingCountry}"/>
+                <apex:inputField value="{!Quote.ShippingCountry}"/>
+                
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+        <apex:actionFunction name="CallApexMethod" action="{!afterSave}"/>
+        <!--<apex:actionPoller action="{!incrementCounter}" interval="5" enabled="{!isTimerOn}"/>-->
+    </apex:form>
+</apex:page>

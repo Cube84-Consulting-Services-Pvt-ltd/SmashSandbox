@@ -1,0 +1,70 @@
+<apex:page standardController="case" extensions="NewCaseCreationPage" lightningStylesheets="true" >
+    <apex:slds />
+    <style>
+        p {
+        display: block;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        margin-left: 1em;
+        margin-right: 0;
+        font-size="6";
+        }
+        
+        
+    </style>
+    <Style>
+        .requiredBlock{
+        bottom: 1px !important;
+        color: red !important;
+        font-size: 25px !important;
+        left: -10px !important;
+        position: absolute !important;
+        }
+        .verticalLine {
+        border-left: thick solid #ff0000;
+        }
+    </Style>
+    <Script>
+        function changeRequiredBlockToStar() {
+        var allRequiredBlock = document.getElementsByClassName('requiredBlock');
+        if (allRequiredBlock != null) {
+        for (var intI = 0;intI < allRequiredBlock.length; intI++) {
+        if (allRequiredBlock[intI] != null) {
+        allRequiredBlock[intI].innerHTML = '*';
+        }
+        }
+        }
+        }
+    </Script> 
+    <apex:form >   
+    <apex:pageBlock mode="edit">
+        <style>
+            body .bPageBlock .pbBody .blue .pbSubheader{
+            background-color:#F3F2F2;
+            }
+        </style>
+        
+        <apex:pageBlockSection title="Case Information" collapsible="false" dir="LTR" columns="2">
+            <apex:inputfield value="{!objcase.Category__c}" style="width:500px;height:30px" /><br/><br/>
+            <apex:inputField value="{!objcase.Priority}" style="width:500px;height:30px"/><br/><br/>                      
+            <apex:inputField value="{!objcase.Subject}" style="width:500px;height:30px"/><br/><br/>          
+            <apex:inputTextarea value="{!objcase.Description}" rows="10" cols="71" style="width:500px;"/>                                     
+        </apex:pageBlockSection>    
+        <br/><br/>
+        
+        <apex:pageBlockSection title="Uploading the Attachment" collapsible="false" dir="LTR" columns="1">
+            <div id="upload" class="upload">                                   
+                <apex:inputFile id="fileToUpload" value="{!fileBody}" filename="{!fileName}" styleClass="input-file"/>                            
+            </div>
+        </apex:pageBlockSection> 
+        
+        <br/><br/>
+        <center> 
+            <apex:commandButton value="Submit a Case" styleClass="slds-button slds-button_brand"  action="{!save}"/> 
+            <apex:commandButton value="Cancel" styleClass="slds-button slds-button_brand"  action="{!cancel}" immediate="true"/>
+        </center>
+        
+        <br/>
+    </apex:pageBlock>
+    </apex:form>
+</apex:page>

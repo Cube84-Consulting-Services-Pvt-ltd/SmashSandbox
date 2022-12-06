@@ -1,0 +1,3 @@
+<aura:component controller="downloadMessageController" implements="force:appHostable,flexipage:availableForAllPageTypes,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+    <aura:handler name="init" action="{!c.doInit}" value="{!this}" access="global" />
+</aura:component>

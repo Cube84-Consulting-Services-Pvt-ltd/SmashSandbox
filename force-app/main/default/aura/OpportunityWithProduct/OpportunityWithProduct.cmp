@@ -1,0 +1,148 @@
+<aura:component controller="Mycontroller" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction,lightning:actionOverride"
+                access="global">
+    
+     <aura:handler name="init" value="this" action="{!c.doInit}"/>
+     <aura:attribute name="oppdata" type="String" default="Test"/>
+    <aura:attribute name="ContactId" type="String" />
+    <aura:attribute name="AccountId" type="String" />
+    <aura:attribute name="test" type="String" />
+   
+    
+    <!--  <aura:handler event="force:refreshView" action="{!c.isRefreshed}" /> -->
+    <aura:attribute name="StageName" type="String" />
+    <aura:attribute name="isAddProduct" type="Boolean" default="false"/>
+    <aura:attribute name="buttonVariant" type="String" default="neutral" />
+    <article class="slds-card">
+        <br/><br/>
+        <div class="slds-p-bottom_large slds-p-left_large" >
+            
+            
+            
+            <lightning:recordEditForm aura:id="editForm" objectApiName="Opportunity"
+                                      recordTypeId="{!v.recordTypeId}"
+                                      onsubmit="{!c.handleSubmit}" 
+                                      onsuccess="{!if(v.isAddProduct == true,c.handleSuccess,c.handleDetail)}">
+                <lightning:messages />
+                <h3 class="slds-section-title--divider">Opportunity Information</h3>                       
+                <div class="slds-grid slds-gutters">
+                    
+                    <div class="slds-col">
+                        <div class="slds-size_3-of-1">
+                            <div class="slds-m-left_xx-large">
+                                
+                               <div class="slds-hide">
+                                <lightning:inputField fieldName="Name"  required="true" style="" value="{!v.oppdata}"/>
+                                </div> 
+                                <lightning:inputField fieldName="AccountId"  label="Account" value="{!v.AccountId}" required="true"  style="">
+                                </lightning:inputField>
+                                <lightning:inputField fieldName="Contact_Name__c" label="Contact" value="{!v.ContactId}"  style="">
+                                </lightning:inputField>
+                                
+                                <lightning:inputField fieldName="Type" label="Type"   style="">
+                                </lightning:inputField>
+                                <lightning:inputField fieldName="Priority_of_Sale__c" label="Priority of Sale"   style="">
+                                </lightning:inputField>
+                                <lightning:inputField fieldName="Trial__c" label="Trail" style="">
+                                </lightning:inputField>
+                                <lightning:inputField fieldName="TSR__c" label="TSR"   style="">
+                                </lightning:inputField>
+                                 <lightning:inputField fieldName="Top_10__c" label="Top 10"   style="">
+                                </lightning:inputField>
+                                
+                            </div>                          
+                        </div>
+                    </div>
+                    <div class="slds-col">
+                        <div class="slds-size_3-of-1">
+                            <div class="slds-m-left_xx-large">
+                                <lightning:inputField fieldName="OwnerId" label="Opportunity Owner"  style="">
+                                </lightning:inputField>
+                                <lightning:inputField fieldName="Amount" style=""/> 
+                                
+                                <lightning:inputField fieldName="CloseDate" label="CloseDate" required="true" style=""/>
+                                
+                                <lightning:inputField fieldName="StageName" label="StageName"  required="true" style=""/>
+                                
+                                
+                            <!--      <lightning:inputField fieldName="Probability" label="Probability" style="" /> -->
+                                
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+                
+                <h3 class="slds-section-title--divider">Products Interested</h3>                       
+                <div class="slds-grid slds-gutters">
+                    
+                    <div class="slds-col">
+                        <div class="slds-size_3-of-1">
+                            <div class="slds-m-left_xx-large">
+                                <lightning:inputField fieldName="Interested_Product_Type__c" styleClass="requiredInput"    style=""/>
+                                <lightning:inputField fieldName="Manufactured__c" styleClass="requiredInput"    style=""/>
+                                <lightning:inputField fieldName="Resale__c" styleClass="requiredInput"    style=""/>
+                                <lightning:inputField fieldName="Supplier__c" styleClass="requiredInput"    style=""/>
+                                
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="slds-col">
+                        <div class="slds-size_3-of-1">
+                            <div class="slds-m-left_xx-large">
+                                <lightning:inputField fieldName="Descriptions__c" styleClass="requiredInput"   style="" class="img_1"/> 
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+                
+                <h3 class="slds-section-title--divider">Additional Information</h3> 
+                <div class="slds-grid slds-gutters">
+                    <div class="slds-col">
+                        <div class="slds-size_3-of-1">
+                            <div class="slds-m-left_xx-large">
+                                <lightning:inputField  fieldName="Closed_Won_Reason__c" label="Closed Won Reason" required="true" style="" />
+                                <lightning:inputField  fieldName="Resources_Require_to_Support_Opportunity__c" style="" />
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="slds-col">
+                        <div class="slds-size_3-of-1">
+                            <div class="slds-m-left_xx-large">
+                                <div class="slds-m-left_xx-large">
+                                    <lightning:inputField  fieldName="Closed_Lost_Reason__c" label="Closed Lost Reason" required="true" style="" class="img_2"/>
+                                    <lightning:inputField  fieldName="Next_Steps_Status_Update__c" style="" class="img_2"/>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="slds-m-top_medium slds-text-align_center">
+                    <Center>
+                        <lightning:button variant="brand" name="Save" label="Save" type="submit" onclick="{!c.handleSubmit}"/>
+                    <!--    <lightning:button variant="brand" name="Save &amp; AddProducts" label="Save &amp; Add Products" type="submit" onclick="{!c.handleSubmit}"/> -->
+                        <lightning:button variant="neutral" type="cancel" name="cancel" label="Cancel" onclick="{!c.onCancel}"/>
+                        
+                        
+                    </Center>
+                </div>
+            </lightning:recordEditForm>  
+            <lightning:navigation aura:id="navService"/>
+            <!--  <div class="slds-clearfix">
+   <div class="slds-float_right">    
+    <Center>
+        <lightning:button variant="brand" type="button" name="Save" label="Save" onclick="{!c.saveProposal}" />
+      <lightning:button variant="brand" type="button" name="saveNew" label="SaveNew" onclick="{!c.savenew}"/>
+       <lightning:button variant="brand" type="cancel" name="cancel" label="Cancel" onclick="{!c.onCancel}"/>
+        
+    </Center>
+        </div>
+        </div>  -->
+            
+        </div>
+    </article>
+</aura:component>

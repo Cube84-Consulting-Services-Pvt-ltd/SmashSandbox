@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>NateId</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NateId</shortDescription>
+        <value>0056g000004qqXeAAI</value>
+    </labels>
+</CustomLabels>

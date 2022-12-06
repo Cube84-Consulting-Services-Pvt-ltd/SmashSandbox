@@ -1,0 +1,79 @@
+<apex:page controller="Searchcontact_controller" action="{!searchcon}" lightningStylesheets="true" >
+<script type="text/javascript">
+   html {
+    font-family: 'Salesforce Sans',Arial,sans-serif;
+    font-size: 90%;
+    line-height: 1.5;
+    background: rgb(176, 196, 223);
+    color: rgb(22, 50, 92);
+    -webkit-tap-highlight-color: transparent;
+}   
+</script>
+     <style>
+   .defaultButton {
+    display:none !important;
+    }
+   </style>
+   
+    <!--<apex:include pagename="searchAccountVfpage"/>-->
+ <apex:form >
+  <apex:pageBlock id="thePb" title="Search Contacts">
+   <apex:pageblockSection id="thepbs">
+    <apex:inputField value="{!acc.Lastname}" label="Contact Name" required="false" id="accName"/>
+      <apex:inputfield value="{!acc.Secondary_Mailing_State__c}"/> 
+     <apex:inputfield value="{!acc.MailingState}"/>
+       <apex:inputfield value="{!acc.OwnerId}" required="false" html-autocomplete="On"/>
+       <apex:inputfield value="{!acc.Alternate_Mailing_State__c}"/>
+   </apex:pageblockSection>
+   <apex:pageblockButtons location="bottom">
+      <apex:commandButton value="Search" action="{!searchcon}" />
+       <apex:commandButton value="Clear Search" action="{!clear}"/>
+     </apex:pageblockButtons>  
+      <apex:pageBlockButtons location="Top">
+          <apex:commandButton value="Search" action="{!searchcon}" styleClass="defaultButton" />
+           <apex:commandlink action="{!newcontact}">
+               <apex:commandButton value="Create New Contact"/>
+          </apex:commandLink> 
+   
+          <apex:commandlink action="{!redirect}">
+                <apex:commandButton value="Back To Contacts"/>
+            </apex:commandLink>
+            </apex:pageBlockButtons>
+  </apex:pageBlock>
+  
+   <apex:pageBlock title="Contact Details" id="noRec" rendered="{! IF( accountList != null && accountList.size ==0 , true, false)}" >
+  <apex:outputPanel >
+    <h1>No Records Found </h1>
+</apex:outputPanel>
+  </apex:pageBlock>
+
+  
+  <apex:pageBlock title="Contact Details" id="details" rendered="{! IF( accountList != null && accountList.size >0, true, false)}" >
+
+   <apex:pageBlockTable value="{!accountList}" var="a">
+   <apex:column headerValue="Contact Name">
+    <apex:outputLink target="_blank" value="/{!a.id}">{!a.Name}</apex:outputLink> 
+   </apex:column>     
+    <apex:column value="{!a.Email}" headerValue="Email"/>  
+       <apex:column value="{!a.Phone}" headerValue="Phone"/>
+       <apex:column value="{!a.OwnerId}" headerValue="Contact Owner"/>
+       <apex:column value="{!a.MailingState}" headerValue="Mailing State"/>
+    <apex:column value="{!a.Alternate_Mailing_State__c}" headerValue="Alternate Mailing State"/>
+     <apex:column value="{!a.Secondary_Mailing_State__c}" headerValue="Secondary Mailing State"/>  
+        
+       <apex:column value="{!a.AccountId}"></apex:column> headerValue="Account"/>    
+   </apex:pageBlockTable>
+       <apex:pageblockButtons location="bottom">
+ <apex:commandButton value="First Page" rerender="details" action="{!FirstPage}" disabled="{!prev}"/>
+<apex:commandButton value="Previous" rerender="details" action="{!previous}" disabled="{!prev}"/>
+<apex:commandButton value="Next" rerender="details" action="{!next}" disabled="{!nxt}"/>
+<apex:commandButton value="Last Page" rerender="details" action="{!LastPage}" disabled="{!nxt}"/>
+</apex:pageblockButtons>
+   
+  </apex:pageBlock>
+     <apex:pageBlock >
+       <apex:outputText value="Total Records:{!total_size}" style="float:right;font-size: 20px;"/>
+     </apex:pageBlock>
+
+ </apex:form>
+</apex:page>

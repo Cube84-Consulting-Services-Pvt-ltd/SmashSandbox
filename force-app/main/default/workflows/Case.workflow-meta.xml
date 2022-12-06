@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Notify_Case_Requester_upon_case_creation</fullName>
+        <ccEmails>anusha@cube84.com</ccEmails>
+        <ccEmails>dileep@cube84.com</ccEmails>
+        <ccEmails>kaveri@cube84.com</ccEmails>
+        <ccEmails>hema@cube84.com</ccEmails>
+        <ccEmails>khajapeer.s@cube84.com</ccEmails>
+        <description>Notify  Case Requester upon case creation</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Notify_Case_Requester_When_new_Case_Created</template>
+    </alerts>
+    <alerts>
+        <fullName>Notify_Case_Requestor_upon_case_closed</fullName>
+        <ccEmails>getsupport@cube84.com</ccEmails>
+        <ccEmails>anusha@cube84.com</ccEmails>
+        <ccEmails>dileep@cube84.com</ccEmails>
+        <description>Notify Case Requestor upon case closed</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Notify_Case_Requestor_when_case_closed</template>
+    </alerts>
+    <alerts>
+        <fullName>Notify_the_Case_Requestor_upon_case_closed</fullName>
+        <ccEmails>getsupport@cube84.com</ccEmails>
+        <ccEmails>anusha@cube84.com</ccEmails>
+        <ccEmails>dileep@cube84.com</ccEmails>
+        <description>Notify the Case Requestor upon case closed</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Notify_Case_Requestor_when_case_closed</template>
+    </alerts>
+    <alerts>
+        <fullName>Notify_the_Case_Requestor_upon_case_creation</fullName>
+        <ccEmails>getsupport@cube84.com</ccEmails>
+        <ccEmails>anusha@cube84.com</ccEmails>
+        <ccEmails>dileep@cube84.com</ccEmails>
+        <ccEmails>khajapeer.s@cube84.com</ccEmails>
+        <description>Notify the Case Requestor upon case creation</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Notify_Case_Requester_When_new_Case_Created</template>
+    </alerts>
+    <alerts>
+        <fullName>When_ever_a_case_closed_then_email_alert_is_send_to_the_case_owner</fullName>
+        <ccEmails>getsupport@cube84.com</ccEmails>
+        <ccEmails>anusha@cube84.com</ccEmails>
+        <ccEmails>dileep@cube84.com</ccEmails>
+        <ccEmails>khajapeer.s@cube84.com</ccEmails>
+        <description>When ever a case closed then email alert is send to the case owner</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Notify_Cube84_when_case_closed</template>
+    </alerts>
+    <alerts>
+        <fullName>When_ever_a_case_is_created_email_alert_is_send_to_the_case_owner</fullName>
+        <ccEmails>harsha@cube84.com</ccEmails>
+        <ccEmails>khajapeer.s@cube84.com</ccEmails>
+        <ccEmails>hema@cube84.com</ccEmails>
+        <ccEmails>gaurav.g@cube84.com</ccEmails>
+        <ccEmails>michael.r@cube84.com</ccEmails>
+        <description>When ever a case is created  email alert is send to the case owner</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>cube84user@gusmerenterprises.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Notify_Cube84_when_case_created</template>
+    </alerts>
+    <alerts>
+        <fullName>When_ever_a_case_is_created_then_email_alert_is_send_to_the_case_owner</fullName>
+        <ccEmails>getsupport@cube84.com</ccEmails>
+        <ccEmails>anusha@cube84.com</ccEmails>
+        <ccEmails>dileep@cube84.com</ccEmails>
+        <description>When ever a case is created then email alert is send to Owner</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Notify_Cube84_when_case_created</template>
+    </alerts>
+    <alerts>
+        <fullName>When_ever_case_closed_then_email_alert_is_send_to_the_case_owner</fullName>
+        <ccEmails>getsupport@cube84.com</ccEmails>
+        <ccEmails>aiswarya.m@cube84.com</ccEmails>
+        <ccEmails>dileep@cube84.com</ccEmails>
+        <ccEmails>hema@cube84.com</ccEmails>
+        <ccEmails>khajapeer.s@cube84.com</ccEmails>
+        <description>When ever case closed then email alert is send to the case owner</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>cube84user@gusmerenterprises.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Notify_Cube84_when_case_closed</template>
+    </alerts>
+    <rules>
+        <fullName>Notify whenever Case Closed</fullName>
+        <actions>
+            <name>When_ever_case_closed_then_email_alert_is_send_to_the_case_owner</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Case.Status</field>
+            <operation>equals</operation>
+            <value>Closed_Future,Closed_REsolved,Closed - Unsuccessful</value>
+        </criteriaItems>
+        <description>Notification email to be send when ever case gets closed.</description>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Notify whenever Case Created</fullName>
+        <actions>
+            <name>When_ever_a_case_is_created_email_alert_is_send_to_the_case_owner</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Case.CreatedDate</field>
+            <operation>equals</operation>
+            <value>TODAY</value>
+        </criteriaItems>
+        <description>Notification email will be sent when ew case created.</description>
+        <failedMigrationToolVersion>238.14.6</failedMigrationToolVersion>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+</Workflow>

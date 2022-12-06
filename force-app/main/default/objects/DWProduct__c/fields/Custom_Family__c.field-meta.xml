@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Custom_Family__c</fullName>
+    <externalId>false</externalId>
+    <label>Custom Family</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Absorbent Products</fullName>
+                <default>false</default>
+                <label>Absorbent Products</label>
+            </value>
+            <value>
+                <fullName>Animal Bedding</fullName>
+                <default>false</default>
+                <label>Animal Bedding</label>
+            </value>
+            <value>
+                <fullName>Calenderboard</fullName>
+                <default>false</default>
+                <label>Calenderboard</label>
+            </value>
+            <value>
+                <fullName>Cellu-Stacks</fullName>
+                <default>false</default>
+                <label>Cellu-Stacks</label>
+            </value>
+            <value>
+                <fullName>Chemicals</fullName>
+                <default>false</default>
+                <label>Chemicals</label>
+            </value>
+            <value>
+                <fullName>Colorings</fullName>
+                <default>false</default>
+                <label>Colorings</label>
+            </value>
+            <value>
+                <fullName>Contitech Hoses</fullName>
+                <default>false</default>
+                <label>Contitech Hoses</label>
+            </value>
+            <value>
+                <fullName>Edible Oil</fullName>
+                <default>false</default>
+                <label>Edible Oil</label>
+            </value>
+            <value>
+                <fullName>Enzymes</fullName>
+                <default>false</default>
+                <label>Enzymes</label>
+            </value>
+            <value>
+                <fullName>Equipment</fullName>
+                <default>false</default>
+                <label>Equipment</label>
+            </value>
+            <value>
+                <fullName>Filter Housings/Presses</fullName>
+                <default>false</default>
+                <label>Filter Housings/Presses</label>
+            </value>
+            <value>
+                <fullName>Filtermass</fullName>
+                <default>false</default>
+                <label>Filtermass</label>
+            </value>
+            <value>
+                <fullName>Filter Paper</fullName>
+                <default>false</default>
+                <label>Filter Paper</label>
+            </value>
+            <value>
+                <fullName>Filter Sheets/Pads</fullName>
+                <default>false</default>
+                <label>Filter Sheets/Pads</label>
+            </value>
+            <value>
+                <fullName>Fining Agents</fullName>
+                <default>false</default>
+                <label>Fining Agents</label>
+            </value>
+            <value>
+                <fullName>Food Powder Blends</fullName>
+                <default>false</default>
+                <label>Food Powder Blends</label>
+            </value>
+            <value>
+                <fullName>Instruments</fullName>
+                <default>false</default>
+                <label>Instruments</label>
+            </value>
+            <value>
+                <fullName>Lab Services</fullName>
+                <default>false</default>
+                <label>Lab Services</label>
+            </value>
+            <value>
+                <fullName>Malolactic Bacteria</fullName>
+                <default>false</default>
+                <label>Malolactic Bacteria</label>
+            </value>
+            <value>
+                <fullName>Milled Fiber</fullName>
+                <default>false</default>
+                <label>Milled Fiber</label>
+            </value>
+            <value>
+                <fullName>Millipore</fullName>
+                <default>false</default>
+                <label>Millipore</label>
+            </value>
+            <value>
+                <fullName>Molded Device Components</fullName>
+                <default>false</default>
+                <label>Molded Device Components</label>
+            </value>
+            <value>
+                <fullName>Non-Edible Oil Media(DOF,AMS)</fullName>
+                <default>false</default>
+                <label>Non-Edible Oil Media(DOF,AMS)</label>
+            </value>
+            <value>
+                <fullName>Nutrient</fullName>
+                <default>false</default>
+                <label>Nutrient</label>
+            </value>
+            <value>
+                <fullName>Oak-Mor Granular Oak</fullName>
+                <default>false</default>
+                <label>Oak-Mor Granular Oak</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Other - Specialty Products</fullName>
+                <default>false</default>
+                <label>Other - Specialty Products</label>
+            </value>
+            <value>
+                <fullName>Packed Chromatography Column</fullName>
+                <default>false</default>
+                <label>Packed Chromatography Column</label>
+            </value>
+            <value>
+                <fullName>Spill Clean Up</fullName>
+                <default>false</default>
+                <label>Spill Clean Up</label>
+            </value>
+            <value>
+                <fullName>Tannins</fullName>
+                <default>false</default>
+                <label>Tannins</label>
+            </value>
+            <value>
+                <fullName>Yeast</fullName>
+                <default>false</default>
+                <label>Yeast</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

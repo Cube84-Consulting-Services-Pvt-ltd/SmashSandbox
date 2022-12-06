@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>55.0</apiVersion>
+    <decisions>
+        <name>ClosedDate_Year</name>
+        <label>ClosedDate Year</label>
+        <locationX>314</locationX>
+        <locationY>335</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Sales_in_Last_Year</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>LASTYEAR</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_last_year_dummy</targetReference>
+            </connector>
+            <label>Sales in Last Year</label>
+        </rules>
+        <rules>
+            <name>Sales_in_Curent</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>CURRENTYEAR</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_dummy_field_CY</targetReference>
+            </connector>
+            <label>Sales in Current year</label>
+        </rules>
+    </decisions>
+    <description>When close date is in last year update dummy field last year with 1
+When opp close date is in this year update 1 in dummy field</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>CURRENTYEAR</name>
+        <dataType>Boolean</dataType>
+        <expression>IF(YEAR({!$Record.CloseDate}) == (YEAR(TODAY())), true, false )</expression>
+    </formulas>
+    <formulas>
+        <name>LASTYEAR</name>
+        <dataType>Boolean</dataType>
+        <expression>IF(YEAR({!$Record.CloseDate}) == (YEAR(TODAY())-1), true, false )</expression>
+    </formulas>
+    <interviewLabel>Sales in Last year and CY dummy {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Sales in Last year and CY dummy</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Update_dummy_field_CY</name>
+        <label>Update dummy field CY</label>
+        <locationX>314</locationX>
+        <locationY>455</locationY>
+        <inputAssignments>
+            <field>Sales_in_Current_Year_Dummy__c</field>
+            <value>
+                <stringValue>1</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_last_year_dummy</name>
+        <label>Update last year dummy</label>
+        <locationX>50</locationX>
+        <locationY>455</locationY>
+        <inputAssignments>
+            <field>Sales_from_Last_Year_Dummy__c</field>
+            <value>
+                <stringValue>1</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>188</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>ClosedDate_Year</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>CloseDate</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <object>Opportunity</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

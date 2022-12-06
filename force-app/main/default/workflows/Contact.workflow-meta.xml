@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Catalog_Req_on_Update</fullName>
+        <ccEmails>catalogs@gusmerenterprises.com</ccEmails>
+        <description>Catalog Request Email Alert on Contact Updation</description>
+        <protected>false</protected>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Catalog_Request_Contact</template>
+    </alerts>
+    <alerts>
+        <fullName>Catalog_Request_Contact</fullName>
+        <description>Catalog Request_Contact</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Email</field>
+            <type>email</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Catalog_Request_Contact</template>
+    </alerts>
+    <alerts>
+        <fullName>Catalog_Request_Email_Alert_on_Creation</fullName>
+        <ccEmails>catalogs@gusmerenterprises.com</ccEmails>
+        <description>Catalog Request Email Alert on Contact Creation</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>cube84user@gusmerenterprises.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Catalog_Request_Contact</template>
+    </alerts>
+    <alerts>
+        <fullName>Contact_Mark_For_Delete</fullName>
+        <description>Contact Mark For Delete</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>cube84user@gusmerenterprises.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Contact_Mark_For_Delete</template>
+    </alerts>
+    <alerts>
+        <fullName>New_Pardot_Message_Notification</fullName>
+        <description>New Pardot Message Notification</description>
+        <protected>false</protected>
+        <recipients>
+            <type>campaignMemberDerivedOwner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/New_Pardot_Message</template>
+    </alerts>
+    <rules>
+        <fullName>Catalog Request Email Alert on Contact Creation</fullName>
+        <actions>
+            <name>Catalog_Request_Email_Alert_on_Creation</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <booleanFilter>(1 AND 2) OR(3 AND 4)OR(5 AND 6)OR(1 AND 2 AND 3 AND 4 AND 5 AND 6)OR(1 AND 2 AND 3 AND 4)OR(3 AND 4 AND 5 AND 6)OR(5 AND 6 AND 1 AND 2)</booleanFilter>
+        <criteriaItems>
+            <field>Contact.Brewing_Catalog__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Contact.Brewing_Catalog_Request_Date__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Contact.Distilling_Catalog__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Contact.Distilling_Catalog_Request_Date__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Contact.Wine_Catalog__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Contact.Wine_Catalog_Request_Date__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Catalog Request Email Alert on Contact Updation</fullName>
+        <actions>
+            <name>Catalog_Req_on_Update</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <formula>OR(AND(PRIORVALUE(Brewing_Catalog__c) = False,Brewing_Catalog__c = True, ISBLANK(PRIORVALUE( Brewing_Catalog_Request_Date__c)) ,NOT(ISBLANK( Brewing_Catalog_Request_Date__c))), AND(PRIORVALUE( Distilling_Catalog__c ) = False,Distilling_Catalog__c = True, ISBLANK(PRIORVALUE(Distilling_Catalog_Request_Date__c )) ,NOT(ISBLANK( Distilling_Catalog_Request_Date__c))),AND(PRIORVALUE( Wine_Catalog__c ) = False,Wine_Catalog__c = True, ISBLANK(PRIORVALUE(  Wine_Catalog_Request_Date__c )) ,NOT(ISBLANK( Wine_Catalog_Request_Date__c))), AND(PRIORVALUE(Brewing_Catalog__c) = False,Brewing_Catalog__c = True, ISBLANK(PRIORVALUE( Brewing_Catalog_Request_Date__c)) ,NOT(ISBLANK( Brewing_Catalog_Request_Date__c)), PRIORVALUE( Distilling_Catalog__c ) = False,Distilling_Catalog__c = True,ISBLANK(PRIORVALUE(Distilling_Catalog_Request_Date__c )) ,NOT(ISBLANK( Distilling_Catalog_Request_Date__c))),AND(PRIORVALUE( Wine_Catalog__c ) = False,Wine_Catalog__c = True, ISBLANK(PRIORVALUE(  Wine_Catalog_Request_Date__c )) ,NOT(ISBLANK( Wine_Catalog_Request_Date__c)), PRIORVALUE(Brewing_Catalog__c) = False,Brewing_Catalog__c = True,ISBLANK(PRIORVALUE( Brewing_Catalog_Request_Date__c)) ,NOT(ISBLANK( Brewing_Catalog_Request_Date__c))),AND(PRIORVALUE( Distilling_Catalog__c ) = False,Distilling_Catalog__c = True,ISBLANK(PRIORVALUE(Distilling_Catalog_Request_Date__c )) ,NOT(ISBLANK( Distilling_Catalog_Request_Date__c)),PRIORVALUE( Wine_Catalog__c ) = False,Wine_Catalog__c = True, ISBLANK(PRIORVALUE(  Wine_Catalog_Request_Date__c )) ,NOT(ISBLANK( Wine_Catalog_Request_Date__c))),AND(PRIORVALUE(Brewing_Catalog__c) = False,Brewing_Catalog__c = True, ISBLANK(PRIORVALUE( Brewing_Catalog_Request_Date__c)) ,NOT(ISBLANK( Brewing_Catalog_Request_Date__c)), PRIORVALUE( Distilling_Catalog__c ) = False,Distilling_Catalog__c = True,ISBLANK(PRIORVALUE(Distilling_Catalog_Request_Date__c )) ,NOT(ISBLANK( Distilling_Catalog_Request_Date__c)),PRIORVALUE( Wine_Catalog__c ) = False,Wine_Catalog__c = True, ISBLANK(PRIORVALUE(  Wine_Catalog_Request_Date__c )) ,NOT(ISBLANK( Wine_Catalog_Request_Date__c))))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+</Workflow>

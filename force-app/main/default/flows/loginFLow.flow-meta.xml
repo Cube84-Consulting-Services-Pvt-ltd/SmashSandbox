@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>49.0</apiVersion>
+    <interviewLabel>loginFLow {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>loginFLow</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Flow</processType>
+    <screens>
+        <name>DisclaimerInfo</name>
+        <label>DisclaimerInfo</label>
+        <locationX>167</locationX>
+        <locationY>119</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <fields>
+            <name>Disclaimer</name>
+            <fieldText>&lt;p&gt;&lt;span style=&quot;color: rgb(49, 23, 202); font-size: 16px;&quot;&gt;CDA &lt;/span&gt;&lt;span style=&quot;color: rgb(69, 35, 218); font-size: 16px;&quot;&gt;Notice&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Information in our CRM contains confidential information of Gusmer and of certain of our customers.  Gusmer and its employees and agents are obligated to protect the confidentiality of such information and restrict its use to the limited purposes for which it is provided. It is provided or made available to you or may be accessed by you, and/or may be further disclosed within Gusmer, only on a “need to know” basis, and may not be disclosed by you outside of Gusmer, or used by you for any purpose except strictly on behalf of Gusmer, except only for any disclosure outside of Gusmer as needed and approved by Gusmer and pursuant to a confidentiality obligation of any such third party recipient.  By receiving or accessing this information you hereby agree to the foregoing.&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <start>
+        <locationX>50</locationX>
+        <locationY>50</locationY>
+        <connector>
+            <targetReference>DisclaimerInfo</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+</Flow>

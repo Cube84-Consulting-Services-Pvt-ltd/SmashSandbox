@@ -1,0 +1,947 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssignmentRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assignmentRule>
+        <fullName>Lead Assignment Rule by State</fullName>
+        <active>false</active>
+        <ruleEntry>
+            <assignedTo>lsilberman@gusmerenterprises.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <criteriaItems>
+                <field>Lead.Market__c</field>
+                <operation>equals</operation>
+                <value>Edible Oil,Equipment,Other Customer - No Market,Pharmaceutical,Specialty Products,Vendor,Flavor and Fragrance,Chemical / Specialty Chemical,Distributors</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>clupp@gusmerenterprises.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <booleanFilter>(1 OR 2) AND 3</booleanFilter>
+            <criteriaItems>
+                <field>Lead.State</field>
+                <operation>equals</operation>
+                <value>FL,GA,NC,SC,VA</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.State</field>
+                <operation>equals</operation>
+                <value>Florida,Georgia,North Carolina,South Carolina,Virginia</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Market__c</field>
+                <operation>equals</operation>
+                <value>Brewing,Cider,Distilling,Juice/Fruit,Soft Drink,Water,Wine</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>cwebster@gusmerenterprises.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <booleanFilter>(1 OR 2) AND 3</booleanFilter>
+            <criteriaItems>
+                <field>Lead.State</field>
+                <operation>equals</operation>
+                <value>AK,HI,OR,WA</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.State</field>
+                <operation>equals</operation>
+                <value>Alaska,Hawaii,Oregon,Washington</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Market__c</field>
+                <operation>equals</operation>
+                <value>Brewing,Cider,Distilling,Juice/Fruit,Soft Drink,Water,Wine</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>mlortie@gusmerenterprises.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <booleanFilter>(1 AND 3) OR (2 AND 3 AND (4 OR 5 OR 6 OR 7 OR 8 OR 9))</booleanFilter>
+            <criteriaItems>
+                <field>Lead.State</field>
+                <operation>equals</operation>
+                <value>AZ,NM,Arizona,New Mexico</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.State</field>
+                <operation>equals</operation>
+                <value>CA,California</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Market__c</field>
+                <operation>equals</operation>
+                <value>Brewing,Cider,Distilling,Juice/Fruit,Soft Drink,Water,Wine</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.City</field>
+                <operation>contains</operation>
+                <value>Bishop,Bridgeport,Anaheim,Costa Mesa,Irvine,Placentia,Seal Beach,Trabuco Canyon</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.City</field>
+                <operation>contains</operation>
+                <value>Valencia,Van Nuys,Vernon,Whittier</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.City</field>
+                <operation>contains</operation>
+                <value>Alta Loma,Chino,Rancho Cucamonga,Redlands,San Bernadino,Upland,Alpine,Carlsbad,Chula Vista,Escondido,Fallbrook,Julian,La Mesa,Oceanside,Ramona,San Diego,San Marcos,Santee,Vista,Warner Springs</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.City</field>
+                <operation>contains</operation>
+                <value>Stratford,Agua Dulce,Burbank,Carson,Castaic,Cerritos,Claremont,Downey,Flintridge,Glendale,Hawthorne,Irwindale,Lancaster,Long Beach,Los Angeles,Monrovia,Montebello,Pacoima,Palisade,Paramount,Rancho Dominguez,Redondo Beach,San Dimas,South El Monte,Torrance</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.City</field>
+                <operation>contains</operation>
+                <value>Mira Loma,Murrieta,Riverside,Temecula</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.City</field>
+                <operation>contains</operation>
+                <value>Huntington Beach</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>jgallegos@gusmerenterprises.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <booleanFilter>(1 OR 2) AND 3</booleanFilter>
+            <criteriaItems>
+                <field>Lead.State</field>
+                <operation>equals</operation>
+                <value>AR,KS,LA,MS,MO,OK,TX,AL</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.State</field>
+                <operation>equals</operation>
+                <value>Arkansas,Kansas,Louisiana,Missouri,Oklahoma,Texas,Alabama</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Market__c</field>
+                <operation>equals</operation>
+                <value>Brewing,Cider,Distilling,Juice/Fruit,Soft Drink,Water,Wine</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>mpino@gusmerenterprises.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <booleanFilter>(1 OR 2) AND 3</booleanFilter>
+            <criteriaItems>
+                <field>Lead.State</field>
+                <operation>equals</operation>
+                <value>CT,DE,DC,ME,MD,MA,NH,NJ,NY,PA,RI,VT,WV</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.State</field>
+                <operation>equals</operation>
+                <value>Connecticut,Delaware,Washington D.C.,D.C.,Maine,Maryland,Massachusetts,New Hampshire,New Jersey,New York,Philadelphia,Rhode Island,Vermont,West Virginia</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Market__c</field>
+                <operation>equals</operation>
+                <value>Brewing,Cider,Distilling,Juice/Fruit,Soft Drink,Water,Wine</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>bforbes@gusmerenterprises.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <booleanFilter>(1 OR 2) AND 3</booleanFilter>
+            <criteriaItems>
+                <field>Lead.State</field>
+                <operation>equals</operation>
+                <value>IL,IN,MI,OH</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.State</field>
+                <operation>equals</operation>
+                <value>Illinois,Indiana,Michigan,Ohio</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Market__c</field>
+                <operation>equals</operation>
+                <value>Brewing,Cider,Distilling,Juice/Fruit,Soft Drink,Water,Wine</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>tmondor@gusmerenterprises.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <booleanFilter>(1 OR 2) AND 3</booleanFilter>
+            <criteriaItems>
+                <field>Lead.State</field>
+                <operation>equals</operation>
+                <value>IA,MN,WI</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.State</field>
+                <operation>equals</operation>
+                <value>Iowa,Minnesota,Wisconsin</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Market__c</field>
+                <operation>equals</operation>
+                <value>Brewing,Cider,Distilling,Juice/Fruit,Soft Drink,Water,Wine</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>emay@gusmerenterprises.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <booleanFilter>(1 OR 2) AND 3</booleanFilter>
+            <criteriaItems>
+                <field>Lead.State</field>
+                <operation>equals</operation>
+                <value>CO,ID,MT,NE,ND,SD,UT,WY</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.State</field>
+                <operation>equals</operation>
+                <value>Colorado,Idaho,Montana,Nebraska,North Dakota,South Dakota,Utah,Wyoming</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Market__c</field>
+                <operation>equals</operation>
+                <value>Brewing,Cider,Distilling,Juice/Fruit,Soft Drink,Water,Wine</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>bmerz@gusmerenterprises.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <booleanFilter>1 AND 2 AND 3</booleanFilter>
+            <criteriaItems>
+                <field>Lead.State</field>
+                <operation>equals</operation>
+                <value>NV,CA,Nevada,California</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Market__c</field>
+                <operation>equals</operation>
+                <value>Brewing,Cider,Distilling,Juice/Fruit,Soft Drink,Water,Wine</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.City</field>
+                <operation>contains</operation>
+                <value>Arvin,Bakersfield,Buttonwillow,Cutler,Delano,Di Giorgio,Edison,Livingston,Mcfarland,Pixley</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>jjuengel@gusmerenterprises.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <booleanFilter>(1 OR 2) AND 3</booleanFilter>
+            <criteriaItems>
+                <field>Lead.State</field>
+                <operation>equals</operation>
+                <value>KY,TN</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.State</field>
+                <operation>equals</operation>
+                <value>Kentucky,Tennessee</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Market__c</field>
+                <operation>equals</operation>
+                <value>Brewing,Cider,Distilling,Juice/Fruit,Soft Drink,Water,Wine</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>amoore@gusmerenterprises.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <booleanFilter>1 AND 2 AND (3 OR 4)</booleanFilter>
+            <criteriaItems>
+                <field>Lead.State</field>
+                <operation>equals</operation>
+                <value>CA,California</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Market__c</field>
+                <operation>equals</operation>
+                <value>Brewing,Cider,Distilling,Juice/Fruit,Soft Drink,Water,Wine</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.City</field>
+                <operation>contains</operation>
+                <value>Annapolis,Arcata,Bolinas,Cazadero,Clearlake Oaks,Cloverdale,Elk,Eureka,Ferndale,Forestville,Garberville,Geyserville,Glen Ellen,Graton,Guerneville,Healdsburg,Hopland,Kelseyville,Kenwood,Larkspur,Lower Lake,Middletown,Mill Valley</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.City</field>
+                <operation>contains</operation>
+                <value>Nice,Novato,Orleans,Petaluma,Philo,Redcrest,Redway,Redwood Valley,Rohnert Park,San Anselmo,San Francisco,San Rafael,Santa Rosa,Sausalito,Sebastopol,Sonoma,Tiburon,Trinidad,Ukiah,Vineburg,Willow Creek,Windsor,Yorkville</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>gsitton@gusmerenterprises.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <booleanFilter>1 AND 2 AND (3 OR 4 OR 5 OR 6 OR 7)</booleanFilter>
+            <criteriaItems>
+                <field>Lead.State</field>
+                <operation>equals</operation>
+                <value>CA,California</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Market__c</field>
+                <operation>equals</operation>
+                <value>Brewing,Cider,Distilling,Juice/Fruit,Soft Drink,Water,Wine</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.City</field>
+                <operation>contains</operation>
+                <value>Acampo,Alameda,Alamo,Angels Camp,Antioch,Auberry,Auburn,Bay Point,Berkeley,Brentwood,Brooks,Burnt Ranch,Cameron Park,Camino,Carmichael,Castro Valley,Ceres,Chicago Park,Chico,Clarksburg,Clovis,Colfax,Coloma,Concord,Cottonwood,Danville,Davis,Dinuba,Drytown</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.City</field>
+                <operation>contains</operation>
+                <value>Dublin,El Dorado Hills,El Macero,El Sobrante,Elk Grove,Emeryville,Escalon,Esparto,Exeter,Fiddletown,Folsom,Foresthill,Fremont,Fresno,Fresno,Garden Valley,Gold River,Granite Bay,Grass Valley,Gridley,Hanford,Hayfork,Hayward,Hyampom,Ione,Ivanhoe,Kerman</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.City</field>
+                <operation>contains</operation>
+                <value>Kingsburg,Lafayette,Lathrop,Le Grand,Linden,Lindsay,Livermore,Lodi,Loomis,Madera,Manteca,Manton,Mariposa,Martinez,Maxwell,Mendota,Modesto,Mokelumne Hill,Moraga,Mount Aukum,Mountain Ranch,Murphys,Nevada City,Newcastle,Oakhurst,Oakland</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.City</field>
+                <operation>contains</operation>
+                <value>Omo Ranch,Orange Cove,Orinda,Orland,Oroville,Parlier,Penn Valley,Piedra,Pilot Hill,Placerville,Pleasanton,Plymouth,Rancho Cordova,Redding,Ripon,Rocklin,Roseville,Rough And Ready,Sacramento,Salyer,San Leandro,San Ramon,Sanger,Shasta Lake</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.City</field>
+                <operation>contains</operation>
+                <value>Shingle Springs,Shingletown,Somerset,Sonora,South Lake Tahoe,Stockton,Sutter Creek,Tipton,Tracy,Truckee,Tulare,Vallecito,Victor,Vina,Visalia,Walnut Creek,Walnut Grove,Winters,Yuba City</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>nduncan@gusmerenterprises.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <booleanFilter>1 AND 2 AND (3 OR 4 OR 5)</booleanFilter>
+            <criteriaItems>
+                <field>Lead.State</field>
+                <operation>equals</operation>
+                <value>CA,California</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Market__c</field>
+                <operation>equals</operation>
+                <value>Brewing,Cider,Distilling,Juice/Fruit,Soft Drink,Water,Wine</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.City</field>
+                <operation>contains</operation>
+                <value>Aptos,Aromas,Arroyo Grande,Atherton,Belmont,Boulder Creek,Buellton,Burlingame,Campbell,Capitola,Carmel,Carmel Valley,Chualar,Corralitos,Creston,El Granada,Felton,Gilroy,Goleta,Gonzales,Greenfield,Grover Beach,Harmony,Hollister</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.City</field>
+                <operation>contains</operation>
+                <value>King City,La Honda,Lompoc,Los Alamos,Los Altos Hills,Los Gatos,Los Olivos,Marina,Menlo Park,Millbrae,Monte Sereno,Monterey,Moorpark,Morgan Hill,Mountain View,Oak View,Ojai,Paicines,Palo Alto,Paso Robles,Portola Valley,Redwood City,Salinas,San Carlos</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.City</field>
+                <operation>contains</operation>
+                <value>San Jose,San Lucas,San Luis Obispo,San Martin,San Mateo,San Miguel,Santa Barbara,Santa Clara,Santa Cruz,Santa Maria,Santa Ynez,Saratoga,Scotts Valley,Shandon,Soledad,Solvang,Soquel,Stanford,Sunnyvale,Templeton,Ventura,Watsonville,Woodside</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>ppereira@gusmerenterprises.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <booleanFilter>1 AND 2 AND 3</booleanFilter>
+            <criteriaItems>
+                <field>Lead.State</field>
+                <operation>equals</operation>
+                <value>CA,California</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Market__c</field>
+                <operation>equals</operation>
+                <value>Brewing,Cider,Distilling,Juice/Fruit,Soft Drink,Water,Wine</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.City</field>
+                <operation>contains</operation>
+                <value>American Canyon,Angwin,Benicia,Calistoga,Deer Park,Dixon,Fairfield,Napa,Oakville,Pope Valley,Rutherford,St Helena,Suisun Valley,Vacaville,Vallejo,Yountville</value>
+            </criteriaItems>
+        </ruleEntry>
+    </assignmentRule>
+    <assignmentRule>
+        <fullName>Lead Assignment by City in California</fullName>
+        <active>false</active>
+        <ruleEntry>
+            <assignedTo>gsitton@gusmerenterprises.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <booleanFilter>(1 OR 2 OR 3) AND 4</booleanFilter>
+            <criteriaItems>
+                <field>Lead.City</field>
+                <operation>contains</operation>
+                <value>Alameda,Berkeley,Castro Valley,Dublin,Emeryville,Fremont,Hayward,Livermore,Oakland,Pleasanton,San Leandro,Drytown,Fiddletown,Ione,Plymouth,Sutter Creek,Chico,Gridley,Oroville,Angels Camp,Mokelumne Hill,Mountain Ranch,Murphys,Vallecito,Maxwell,Antioch</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.City</field>
+                <operation>contains</operation>
+                <value>Bay Point,Brentwood,Concord,Danville,El Sobrante,Lafayette,Martinez,Moraga,Orinda,San Ramon,Walnut Creek,Alamo,Cameron Park,Camino,Coloma,El Dorado Hills,Garden Valley,Mount Aukum,Omo Ranch,Pilot Hill,Placerville,Shingle Springs,Somerset,South Lake Tahoe</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.City</field>
+                <operation>contains</operation>
+                <value>Auberry,Clovis,Fresno,Fresno,Kerman,Kingsburg,Mendota,Orange Cove,Parlier,Piedra,Sanger,Orland</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Market__c</field>
+                <operation>equals</operation>
+                <value>Brewing,Distilling,Juice/Fruit,Specialty Products,Wine</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>mlortie@gusmerenterprises.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <booleanFilter>(1 OR 2 OR 3 OR 4 OR 5) AND 6</booleanFilter>
+            <criteriaItems>
+                <field>Lead.City</field>
+                <operation>contains</operation>
+                <value>Bishop,Bridgeport,Anaheim,Costa Mesa,Irvine,Placentia,Seal Beach,Trabuco Canyon</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.City</field>
+                <operation>contains</operation>
+                <value>Mira Loma,Murrieta,Riverside,Temecula</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.City</field>
+                <operation>contains</operation>
+                <value>Alta Loma,Chino,Rancho Cucamonga,Redlands,San Bernadino,Upland,Alpine,Carlsbad,Chula Vista,Escondido,Fallbrook,Julian,La Mesa,Oceanside,Ramona,San Diego,San Marcos,Santee,Vista,Warner Springs</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.City</field>
+                <operation>contains</operation>
+                <value>Stratford,Agua Dulce,Burbank,Carson,Castaic,Cerritos,Claremont,Downey,Flintridge,Glendale,Hawthorne,Irwindale,Lancaster,Long Beach,Los Angeles,Monrovia,Montebello,Pacoima,Palisade,Paramount,Rancho Dominguez,Redondo Beach,San Dimas,South El Monte,Torrance</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.City</field>
+                <operation>contains</operation>
+                <value>Valencia,Van Nuys,Vernon,Whittier</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Market__c</field>
+                <operation>equals</operation>
+                <value>Brewing,Distilling,Juice/Fruit,Specialty Products,Wine</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>bmerz@gusmerenterprises.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <criteriaItems>
+                <field>Lead.City</field>
+                <operation>contains</operation>
+                <value>Arvin,Bakersfield,Buttonwillow,Delano,Di Giorgio,Edison,Mcfarland,Livingston,Cutler,Pixley</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Market__c</field>
+                <operation>equals</operation>
+                <value>Brewing,Distilling,Juice/Fruit,Specialty Products,Wine</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>gsitton@gusmerenterprises.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <booleanFilter>(1 OR 2 OR 3 OR 4 OR 5) AND 6</booleanFilter>
+            <criteriaItems>
+                <field>Lead.City</field>
+                <operation>contains</operation>
+                <value>Hanford,Madera,Oakhurst,Mariposa,Le Grand,Chicago Park,Grass Valley,Nevada City,Penn Valley,Rough And Ready,Truckee</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.City</field>
+                <operation>contains</operation>
+                <value>Auburn,Colfax,Foresthill,Granite Bay,Loomis,Newcastle,Rocklin,Roseville</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.City</field>
+                <operation>contains</operation>
+                <value>Carmichael,Elk Grove,Folsom,Gold River,Rancho Cordova,Sacramento,Walnut Grove</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.City</field>
+                <operation>contains</operation>
+                <value>Acampo,Escalon,Lathrop,Linden,Lodi,Manteca,Ripon,Stockton,Tracy,Victor,Cottonwood,Redding,Shasta Lake,Shingletown,Lindsay,Tipton,Tulare,Visalia,Sonora,El Macero,Esparto,Winters</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.City</field>
+                <operation>contains</operation>
+                <value>Ceres,Modesto,Yuba City,Manton,Vina,Burnt Ranch,Hayfork,Hyampom,Salyer,Dinuba,Exeter,Ivanhoe,Brooks,Clarksburg,Davis</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Market__c</field>
+                <operation>equals</operation>
+                <value>Brewing,Distilling,Juice/Fruit,Specialty Products,Wine</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>nduncan@gusmerenterprises.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <booleanFilter>(1 OR 3 OR 4 OR 5) AND 2</booleanFilter>
+            <criteriaItems>
+                <field>Lead.City</field>
+                <operation>contains</operation>
+                <value>Aromas,Carmel,Carmel Valley,Chualar,Gonzales,Greenfield,King City,Marina,Monterey,Salinas,San Lucas,Soledad,Hollister,Paicines</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Market__c</field>
+                <operation>equals</operation>
+                <value>Brewing,Distilling,Juice/Fruit,Specialty Products,Wine</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.City</field>
+                <operation>contains</operation>
+                <value>Campbell,Gilroy,Los Altos Hills,Los Gatos,Monte Sereno,Morgan Hill,Mountain View,Palo Alto,San Jose,San Martin,Santa Clara,Saratoga,Stanford,Sunnyvale,Aptos,Boulder Creek,Capitola,Corralitos,Felton,Santa Cruz,Scotts Valley,Soquel,Watsonville</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.City</field>
+                <operation>contains</operation>
+                <value>Arroyo Grande,Creston,Grover Beach,Harmony,Paso Robles,San Luis Obispo,San Miguel,Shandon,Templeton,Atherton,Belmont,Burlingame,El Granada,Menlo Park,Millbrae,Portola Valley,Redwood City,San Carlos,San Mateo,Woodside,La Honda,Buellton,Goleta,Lompoc</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.City</field>
+                <operation>contains</operation>
+                <value>Los Alamos,Los Olivos,Santa Barbara,Santa Maria,Santa Ynez,Solvang,Moorpark,Oak View,Ojai,Ventura</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>ppereira@gusmerenterprises.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <booleanFilter>(1 OR 3) AND 2</booleanFilter>
+            <criteriaItems>
+                <field>Lead.City</field>
+                <operation>contains</operation>
+                <value>American Canyon,Angwin,Calistoga,Deer Park,Napa,Oakville,Pope Valley,Rutherford,St Helena,Yountville</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Market__c</field>
+                <operation>equals</operation>
+                <value>Brewing,Distilling,Juice/Fruit,Specialty Products,Wine</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.City</field>
+                <operation>contains</operation>
+                <value>Benicia,Dixon,Fairfield,Suisun Valley,Vacaville,Vallejo</value>
+            </criteriaItems>
+        </ruleEntry>
+    </assignmentRule>
+    <assignmentRule>
+        <fullName>New Lead Assignment Rules</fullName>
+        <active>true</active>
+        <ruleEntry>
+            <assignedTo>Unassigned_Leads</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.Market__c</field>
+                <operation>equals</operation>
+                <value>Other Customer - No Market,Vendor,Distributors</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>lsilberman@gusmerenterprises.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <criteriaItems>
+                <field>Lead.Market__c</field>
+                <operation>equals</operation>
+                <value>Edible Oil,Equipment,Pharmaceutical,Specialty Products,Flavor and Fragrance,Chemical / Specialty Chemical</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>clupp@gusmerenterprises.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <booleanFilter>1 OR 2 OR 3 OR 4 OR 5</booleanFilter>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Cuba,Haiti,Dominican Republic,Puerto Rico,Jamaica,Trinidad,Tobago,Guadeloupe,Martinique,Bahamas,Barbados</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Saint Lucia,Curacao,Curaçao,Aruba,Virgin,USVI,Grenada,Antigua,Barbuda,Dominica,Cayman,Saint Kitts,Nevis,Sint Maarten,Saint Martin,St. Martin</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Turks,Caicos,BVI,British Virgin,Caribbean,Anguilla,Barthelemy,Barthélemy</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Argentina,Argentine,Bolivia,Brazil,Chile,Colombia,Ecuador,Guyana,Paraguay,Peru,Suriname,Uruguay,Venezuela</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Mexico,Belize,Costa Rica,El Salvador,Guatemala,Honduras,Nicaragua,Panama</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>tmondor@gusmerenterprises.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <booleanFilter>1 AND (2 OR 3)</booleanFilter>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Canada,CA,CAN,CDN,CND,CAD,Cda,SCC</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.State</field>
+                <operation>equals</operation>
+                <value>Manitoba,Ontario,Quebec,New Brunswick,Nova Scotia,Prince Edward Island,Newfoundland,Labrador</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.State</field>
+                <operation>equals</operation>
+                <value>MB,Man,ON,Ont,QC,Que,P.Q.,NB,N.B.,N.-B.,NS,N.S.,N.-É.,PE,P.E.I.,Î.-P.-É.,NL,N.L.,T.-N.-L.</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>cwebster@gusmerenterprises.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <booleanFilter>1 AND (2 OR 3)</booleanFilter>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Canada,CA,CAN,CDN,CND,CAD,Cda,SCC</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.State</field>
+                <operation>equals</operation>
+                <value>British Columbia,Alberta,Yukon,Northwest Territories,Nunavut</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.State</field>
+                <operation>equals</operation>
+                <value>AB,Alta,Alb,BC,B.C.,C.-B.,YT,Yuk,Yn,YK,NU,Nvt,Nt,NT,N.W.T.,T.N.-O.</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>bmerz@gusmerenterprises.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>China,PRC,CN,CHN</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>clupp@gusmerenterprises.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>notContain</operation>
+                <value>United States,US,USA,U.S.,U.S.A.,America</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>clupp@gusmerenterprises.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <booleanFilter>1 OR 2</booleanFilter>
+            <criteriaItems>
+                <field>Lead.State</field>
+                <operation>equals</operation>
+                <value>FL,GA,NC,SC,VA</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.State</field>
+                <operation>equals</operation>
+                <value>Florida,Georgia,North Carolina,South Carolina,Virginia</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>cwebster@gusmerenterprises.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <booleanFilter>1 OR 2</booleanFilter>
+            <criteriaItems>
+                <field>Lead.State</field>
+                <operation>equals</operation>
+                <value>AK,HI,OR,WA</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.State</field>
+                <operation>equals</operation>
+                <value>Alaska,Hawaii,Oregon,Washington</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>tmondor@gusmerenterprises.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <booleanFilter>1 OR 2</booleanFilter>
+            <criteriaItems>
+                <field>Lead.State</field>
+                <operation>equals</operation>
+                <value>IA,MN,WI</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.State</field>
+                <operation>equals</operation>
+                <value>Iowa,Minnesota,Wisconsin</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>jgallegos@gusmerenterprises.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <booleanFilter>1 OR 2</booleanFilter>
+            <criteriaItems>
+                <field>Lead.State</field>
+                <operation>equals</operation>
+                <value>AL,AR,KS,LA,MS,MO,NM,OK,TX</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.State</field>
+                <operation>equals</operation>
+                <value>Alabama,Arkansas,Kansas,Louisiana,Mississippi,Missouri,New Mexico,Oklahoma,Texas</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>mpino@gusmerenterprises.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <booleanFilter>1 OR 2</booleanFilter>
+            <criteriaItems>
+                <field>Lead.State</field>
+                <operation>equals</operation>
+                <value>CT,DE,DC,ME,MD,MA,NH,NJ,NY,PA,RI,VT,WV</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.State</field>
+                <operation>equals</operation>
+                <value>Connecticut,Delaware,Washington D.C.,D.C.,Maine,Maryland,Massachusetts,New Hampshire,New Jersey,New York,Pennsylvania,Rhode Island,Vermont,West Virginia</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>bforbes@gusmerenterprises.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <booleanFilter>1 OR 2</booleanFilter>
+            <criteriaItems>
+                <field>Lead.State</field>
+                <operation>equals</operation>
+                <value>IL,IN,MI,OH</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.State</field>
+                <operation>equals</operation>
+                <value>Illinois,Indiana,Michigan,Ohio</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>emay@gusmerenterprises.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <booleanFilter>1 OR 2</booleanFilter>
+            <criteriaItems>
+                <field>Lead.State</field>
+                <operation>equals</operation>
+                <value>CO,ID,MT,NE,ND,SD,UT,WY</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.State</field>
+                <operation>equals</operation>
+                <value>Colorado,Idaho,Montana,Nebraska,North Dakota,South Dakota,Utah,Wyoming</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>jjuengel@gusmerenterprises.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <booleanFilter>1 OR 2</booleanFilter>
+            <criteriaItems>
+                <field>Lead.State</field>
+                <operation>equals</operation>
+                <value>KY,TN</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.State</field>
+                <operation>equals</operation>
+                <value>Kentucky,Tennessee</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>bmerz@gusmerenterprises.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <booleanFilter>1 AND 2</booleanFilter>
+            <criteriaItems>
+                <field>Lead.State</field>
+                <operation>equals</operation>
+                <value>NV,Nevada</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.City</field>
+                <operation>equals</operation>
+                <value>Carson City,Gardnerville,Henderson,Las Vegas,Minden,Pahrump,Reno</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>SoCal_AZ</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <booleanFilter>1 OR 2 OR 3 OR 4 OR 5 OR 6 OR 7 OR 8</booleanFilter>
+            <criteriaItems>
+                <field>Lead.State</field>
+                <operation>equals</operation>
+                <value>AZ,Arizona</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.City</field>
+                <operation>equals</operation>
+                <value>Agoura Hills,Agua Dulce,Aliso Viejo,Alpine,Alta Loma,Altadena,Anaheim,Ballard,Bay Point,Beverly Hills,Bonsall,Brawley,Buena Park,Burbank,Calabasas,Cardiff By The Sea,Carson,Castaic,Cerritos,Chatsworth,Chino,Chula Vista,Coronado,Costa Mesa</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.City</field>
+                <operation>equals</operation>
+                <value>Covina,Culver City,Desert Hot Springs,Downey,Duarte,El Cajon,El Centro,El Segundo,Encinitas,Encino,Escondido,Fallbrook,Garden Grove,Gardena,Glendale,Hawthorne,Hemet,Huntington Beach,Imperial,Industry,Irvine,Irwindale,Jamul,Julian,Jurupa Valley</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.City</field>
+                <operation>equals</operation>
+                <value>La Canada,La Habra Heights,La Mesa,La Selva Beach,Ladera Ranch,Laguna Beach,Lake Elsinore,Lake Forest,Lancaster,Leona Valley,Littlerock,Long Beach,Los Alamitos,Los Angeles,Los Osos,Malibu,Manhattan Beach,Marina Del Rey,Menifee,Mira Loma</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.City</field>
+                <operation>equals</operation>
+                <value>Mission Hills,Montclair,Montebello,Montecito,Monterey Bay Academy,Moreno Valley,Murrieta,Newbury Park,Newhall,Newport Beach,North Hills,Pacific Palisades,Pacoima,Palm Desert,Palmdale,Palos Verdes Estates,Paramount,Pasadena</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.City</field>
+                <operation>equals</operation>
+                <value>Pine Valley,Placentia,Playa Del Rey,Poway,Rancho Dominguez,Rancho Santa Fe,Redlands,Redondo Beach,Riverside,Rolling Hills,San Ardo,San Clemente,San Diego,San Dimas,San Pedro,San Ysidro,Santa Ana,Santa Clarita,Santa Monica,Santa Ysabel,Santee</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.City</field>
+                <operation>equals</operation>
+                <value>Seal Beach,Seaside,Sherman Oaks,Signal Hill,Solana Beach,Somis,South El Monte,South Gate,Spring Valley,Sun Valley,Temecula,Temple City,Thousand Oaks,Thousand Palms,Trabuco Canyon,Tustin,Valencia,Valley Center,Van Nuys,Vista,Warner Springs</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.City</field>
+                <operation>equals</operation>
+                <value>West Covina,Westlake Village,Winchester,Winnetka</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>gsitton@gusmerenterprises.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <booleanFilter>1 OR 2 OR 3 OR 4 OR 5 OR 6 OR 7 OR 8 OR 9 OR 10 OR 11</booleanFilter>
+            <criteriaItems>
+                <field>Lead.State</field>
+                <operation>equals</operation>
+                <value>NV,Nevada</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.City</field>
+                <operation>equals</operation>
+                <value>Acampo,Alameda,Alamo,Albany,Altaville,Alturas,Amador City,Angels Camp,Antioch,Artois,Atwater,Auberry,Auburn,Avery,Belden,Ben Lomond,Berkeley,Biola,Blairsden Graeagle,Bolinas,Brentwood,Brooks,Browns Valley,Burlingame,Burnt Ranch</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.City</field>
+                <operation>equals</operation>
+                <value>Burson,Cameron Park,Camino,Campo,Canyon,Caruthers,Castro Valley,Ceres,Chicago Park,Chowchilla,Clarksburg,Clovis,Coarsegold,Colfax,Coloma,Columbia,Concord,Copperopolis,Corcoran,Corning,Corte Madera,Cottonwood,Daly City,Danville,Davis</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.City</field>
+                <operation>equals</operation>
+                <value>Diamond Springs,Dinuba,Discovery Bay,Dobbins,Drytown,Dublin,Durham,El Cerrito,El Dorado Hills,El Macero,El Portal,El Sobrante,Elk,Elk Grove,Elverta,Emerald Hills,Emeryville,Escalon,Esparto,Eureka,Exeter,Fair Oaks,Fiddletown,Folsom,Forest Ranch</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.City</field>
+                <operation>equals</operation>
+                <value>Foresthill,Fowler,Fresno,Friant,Garden Valley,Gerber,Gold River,Granite Bay,Grass Valley,Greenbrae,Greenwood,Gridley,Gustine,Hanford,Hayfork,Hayward,Hillsborough,Hyampom,Ione,Ivanhoe,Jackson,Jamestown,Junction City</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.City</field>
+                <operation>equals</operation>
+                <value>Kerman,Kingsburg,Lafayette,Lathrop,Le Grand,Lewiston,Lincoln,Linden,Lindsay,Livermore,Lockeford,Lockwood,Lodi,Loomis,Madera,Manteca,Manton,Mariposa,Martinez,Maxwell,Mcclellan,Meadow Vista,Mendota</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.City</field>
+                <operation>equals</operation>
+                <value>Merced,Millbrae,Miramonte,Modesto,Mokelumne Hill,Monte Sereno,Montgomery Creek,Moraga,Mount Aukum,Mountain Ranch,Mt. Aukum,Murphys,Nevada City,Newcastle,North Fork,Oakdale,Oakhurst,Oakland,Oakley,Orange Cove,Orangevale</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.City</field>
+                <operation>equals</operation>
+                <value>Oregon House,Orinda,Orland,Orleans,Oroville,Palo Cedro,Parlier,Patterson,Penn Valley,Penryn,Piedmont,Piedra,Pilot Hill,Pittsburg,Placerville,Pleasant Hill,Pleasanton,Plymouth,Porterville,Portola Valley,Prather,Princeton,Rancho Cordova</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.City</field>
+                <operation>equals</operation>
+                <value>Red Bluff,Redcrest,Reedley,Rescue,Richmond,Richvale,Rio Oso,Rio Vista,Ripon,Riverbank,Rocklin,Roseville,Rough And Ready,Sacramento,Salyer,San Bruno,San Leandro,San Lorenzo,San Ramon,Sanger,Shasta Lake,Sheep Ranch,Sheepranch</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.City</field>
+                <operation>equals</operation>
+                <value>Shingle Springs,Shingletown,Somerset,Sonora,South Lake Tahoe,Springville,Squaw Valley,Stockton,Stratford,Sutter Creek,Terra Bella,Tipton,Tracy,Travis Afb,Trinidad,Trinity Center,Truckee,Tulare,Turlock,Union City,Vallecito,Valley Springs</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.City</field>
+                <operation>equals</operation>
+                <value>Victor,Vina,Visalia,Volcano,Wallace,Walnut Creek,Walnut Grove,Waterford,West Sacramento,Westwood,Wheatland,Whitmore,Willow Creek,Wilton,Winters,Wishon,Woodbridge,Woodland,Zamora</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>amoore@gusmerenterprises.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <booleanFilter>1 OR 2 OR 3 OR 4 OR 5</booleanFilter>
+            <criteriaItems>
+                <field>Lead.City</field>
+                <operation>equals</operation>
+                <value>Annapolis,Arbuckle,Arcata,Boonville,Cazadero,Clearlake,Clearlake Oaks,Cloverdale,Cotati,El Granada,El Verano,Fairfax,Ferndale,Forestville,Fort Bragg</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.City</field>
+                <operation>equals</operation>
+                <value>Fortuna,Freestone,Fulton,Garberville,Geyserville,Glen Ellen,Graton,Guerneville,Healdsburg,Hidden Valley Lake,Hopland,Kelseyville,Kenwood,Lakeport</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.City</field>
+                <operation>equals</operation>
+                <value>Larkspur,Laytonville,Lower Lake,Marshall,Mckinleyville,Mendocino,Middletown,Mill Valley,Miranda,Monte Rio,Nice,Novato,Occidental,Penngrove,Petaluma,Philo</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.City</field>
+                <operation>equals</operation>
+                <value>Potter Valley,Redway,Redwood Valley,Rohnert Park,Ross,San Anselmo,San Francisco,San Rafael,Santa Rosa,Sausalito,Sebastopol,Sonoma</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.City</field>
+                <operation>equals</operation>
+                <value>South San Francisco,Talmage,Tiburon,Tomales,Ukiah,Vineburg,Vineyburg,Willits,Windsor,Yorkville</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Central_Coast</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <booleanFilter>1 OR 2 OR 3 OR 4</booleanFilter>
+            <criteriaItems>
+                <field>Lead.City</field>
+                <operation>equals</operation>
+                <value>Aptos,Aromas,Arroyo Grande,Atascadero,Atherton,Belmont,Boulder Creek,Buellton,Camarillo,Campbell,Capitola,Carmel,Carmel Valley,Carpinteria,Chualar,Corralitos,Creston,Cupertino,Felton,Gilroy,Goleta,Gonzales,Greenfield,Grover Beach,Half Moon Bay</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.City</field>
+                <operation>equals</operation>
+                <value>Harmony,King City,La Honda,Lompoc,Los Alamos,Los Altos,Los Altos Hills,Los Gatos,Los Olivos,Marina,Menlo Park,Milpitas,Monterey,Moorpark,Morgan Hill,Newman,Nipomo,Oak View,Ojai,Orcutt,Oxnard,Pacific Grove,Pacifica,Paicines,Palo Alto,Paso Robles</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.City</field>
+                <operation>equals</operation>
+                <value>Redwood City,Salinas,San Carlos,San Jose,San Lucas,San Luis Obispo,San Martin,San Mateo,San Miguel,Santa Barbara,Santa Cruz,Santa Margarita,Santa Maria,Santa Paula,Santa Ynez,Saratoga,Scotts Valley,Shandon,Soledad</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.City</field>
+                <operation>equals</operation>
+                <value>Solvang,Soquel,Sunnyvale,Templeton,Tres Pinos,Ventura,Watsonville,Woodside</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>ppereira@gusmerenterprises.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <criteriaItems>
+                <field>Lead.City</field>
+                <operation>equals</operation>
+                <value>American Canyon,Angwin,Benicia,Calistoga,Deer Park,Fairfield,Imola,Napa,Oakville,Pope Valley,Rutherford,Saint Helena,St Helena,St. Helena,Suisun City,Vacaville,Vallejo,Yountville</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>bmerz@gusmerenterprises.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <criteriaItems>
+                <field>Lead.City</field>
+                <operation>equals</operation>
+                <value>Arvin,Bakersfield,Bishop,Buttonwillow,Cutler,Delano,Edison,Inyokern,Livingston,Mammoth Lakes,Mc Farland,Mcfarland,Pixley,Rosamond,Shafter</value>
+            </criteriaItems>
+        </ruleEntry>
+    </assignmentRule>
+</AssignmentRules>

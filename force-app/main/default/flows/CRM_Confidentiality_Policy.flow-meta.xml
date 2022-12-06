@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>49.0</apiVersion>
+    <interviewLabel>CRM Confidentiality Policy {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>CRM Confidentiality Policy</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Flow</processType>
+    <screens>
+        <name>Login_Flow</name>
+        <label>Login Flow</label>
+        <locationX>236</locationX>
+        <locationY>100</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <fields>
+            <name>Disclaimer</name>
+            <fieldText>&lt;p style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;font-size: 10pt; font-family: Calibri, sans-serif; color: rgb(69, 35, 218); background-color: rgb(255, 255, 255);&quot;&gt;CRM Confidentiality Policy&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;font-size: 10pt; font-family: Calibri, sans-serif;&quot;&gt;One of our most important assets is our confidential corporate information. In the course of your employment, you will be exposed to Gusmer Enterprises, Inc.&apos;s confidential or proprietary information or trade secrets (&quot;Confidential Information&quot;). During employment and at all times thereafter, employees must not use, disclose, copy, furnish or make accessible to anyone Confidential Information except in the performance of duties for Gusmer Enterprises, Inc. Access to Confidential Information should be on a &quot;need-to-know&quot; basis and must be authorized by your manager. Employees are required to safeguard Confidential Information both during their employment and thereafter. Any breach of this policy will not be tolerated and the Company may take legal action.&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;font-size: 10pt; font-family: Calibri, sans-serif;&quot;&gt;Confidential information includes, but is not limited to, (a) information relating to any customer of the Company, including customer names, contact information, customer files and information contained therein, billing, payment or other financial information, or other non-public business information about such customers; (b) information relating to the finances or business of the Company, including billing, payments, budgets, pricing information, other financial information, business or marketing strategies, plans or practices; (c) information received from third parties by the Company under confidential conditions; and (d) any other information relating to the business of the Company not made public by the Company.&lt;/span&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <start>
+        <locationX>50</locationX>
+        <locationY>50</locationY>
+        <connector>
+            <targetReference>Login_Flow</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+</Flow>

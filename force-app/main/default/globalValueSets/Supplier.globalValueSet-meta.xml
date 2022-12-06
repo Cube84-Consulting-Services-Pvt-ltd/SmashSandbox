@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Arobois Oak</fullName>
+        <default>false</default>
+        <label>Arobois Oak</label>
+    </customValue>
+    <customValue>
+        <fullName>BASF</fullName>
+        <default>false</default>
+        <label>BASF</label>
+    </customValue>
+    <customValue>
+        <fullName>Bucher-Unipektin</fullName>
+        <default>false</default>
+        <label>Bucher-Unipektin</label>
+    </customValue>
+    <customValue>
+        <fullName>Bucher-Vaslin</fullName>
+        <default>false</default>
+        <label>Bucher-Vaslin</label>
+    </customValue>
+    <customValue>
+        <fullName>CDR</fullName>
+        <default>false</default>
+        <label>CDR</label>
+    </customValue>
+    <customValue>
+        <fullName>Chr. Hansen</fullName>
+        <default>false</default>
+        <label>Chr. Hansen</label>
+    </customValue>
+    <customValue>
+        <fullName>Christian Gresser</fullName>
+        <default>false</default>
+        <label>Christian Gresser</label>
+    </customValue>
+    <customValue>
+        <fullName>DDW</fullName>
+        <default>false</default>
+        <label>DDW</label>
+    </customValue>
+    <customValue>
+        <fullName>Denwel</fullName>
+        <default>false</default>
+        <label>Denwel</label>
+    </customValue>
+    <customValue>
+        <fullName>DuPont</fullName>
+        <default>false</default>
+        <label>DuPont</label>
+    </customValue>
+    <customValue>
+        <fullName>Gusmer</fullName>
+        <default>false</default>
+        <label>Gusmer</label>
+    </customValue>
+    <customValue>
+        <fullName>Hamilton</fullName>
+        <default>false</default>
+        <label>Hamilton</label>
+    </customValue>
+    <customValue>
+        <fullName>Malek</fullName>
+        <default>false</default>
+        <label>Malek</label>
+    </customValue>
+    <customValue>
+        <fullName>MBT</fullName>
+        <default>false</default>
+        <label>MBT</label>
+    </customValue>
+    <customValue>
+        <fullName>Millipore</fullName>
+        <default>false</default>
+        <label>Millipore</label>
+    </customValue>
+    <customValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </customValue>
+    <customValue>
+        <fullName>Ponndorf</fullName>
+        <default>false</default>
+        <label>Ponndorf</label>
+    </customValue>
+    <customValue>
+        <fullName>PQ</fullName>
+        <default>false</default>
+        <label>PQ</label>
+    </customValue>
+    <customValue>
+        <fullName>Pure Malt</fullName>
+        <default>false</default>
+        <label>Pure Malt</label>
+    </customValue>
+    <customValue>
+        <fullName>Renaissance Yeast</fullName>
+        <default>false</default>
+        <label>Renaissance Yeast</label>
+    </customValue>
+    <customValue>
+        <fullName>Millipore PMT</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Millipore PMT</label>
+    </customValue>
+    <customValue>
+        <fullName>Gusmer - Lenticular Housing</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Gusmer - Lenticular Housing</label>
+    </customValue>
+    <customValue>
+        <fullName>CH</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>CH</label>
+    </customValue>
+    <customValue>
+        <fullName>Yeast</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Yeast</label>
+    </customValue>
+    <customValue>
+        <fullName>Foss</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>FOSS</label>
+    </customValue>
+    <customValue>
+        <fullName>Gresser</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Gresser</label>
+    </customValue>
+    <customValue>
+        <fullName>Pacific Ozone</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Pacific Ozone</label>
+    </customValue>
+    <customValue>
+        <fullName>Stellar Tan</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Stellar Tan</label>
+    </customValue>
+    <customValue>
+        <fullName>Chr-Hansen</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Chr-Hansen</label>
+    </customValue>
+    <customValue>
+        <fullName>Oak</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Oak</label>
+    </customValue>
+    <customValue>
+        <fullName>Gusmer/ Rennaissance</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Gusmer/ Rennaissance</label>
+    </customValue>
+    <customValue>
+        <fullName>Denwell</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Denwell</label>
+    </customValue>
+    <customValue>
+        <fullName>Esau &amp; Hueber</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Esau &amp; Hueber</label>
+    </customValue>
+    <customValue>
+        <fullName>Gusmer - Filter Sheets and Cellu-Stacks</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Gusmer - Filter Sheets and Cellu-Stacks</label>
+    </customValue>
+    <customValue>
+        <fullName>Gusmer - Cellu-Stacks</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Gusmer - Cellu-Stacks</label>
+    </customValue>
+    <customValue>
+        <fullName>Gusmer - Oak</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Gusmer - Oak</label>
+    </customValue>
+    <customValue>
+        <fullName>Gusmer - Fining Agents</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Gusmer - Fining Agents</label>
+    </customValue>
+    <customValue>
+        <fullName>Gusmer-oak</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Gusmer-oak</label>
+    </customValue>
+    <customValue>
+        <fullName>Gusmer- Oak</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Gusmer- Oak</label>
+    </customValue>
+    <customValue>
+        <fullName>Gusmer-Nutrients</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Gusmer-Nutrients</label>
+    </customValue>
+    <customValue>
+        <fullName>Renaissance</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Renaissance</label>
+    </customValue>
+    <customValue>
+        <fullName>Chr Hansen</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Chr Hansen</label>
+    </customValue>
+    <customValue>
+        <fullName>Bucher Vaslin</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Bucher Vaslin</label>
+    </customValue>
+    <customValue>
+        <fullName>Gusmer BioSelect</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Gusmer BioSelect</label>
+    </customValue>
+    <customValue>
+        <fullName>Gusmer - Filter Sheets</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Gusmer - Filter Sheets</label>
+    </customValue>
+    <customValue>
+        <fullName>Polyphenolics</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Polyphenolics</label>
+    </customValue>
+    <customValue>
+        <fullName>Gusmer - Nutrients</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Gusmer - Nutrients</label>
+    </customValue>
+    <customValue>
+        <fullName>Aber</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>ABER</label>
+    </customValue>
+    <customValue>
+        <fullName>Bucher</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Bucher</label>
+    </customValue>
+    <description>Supplier Picklist to use for Opportunities and Leads</description>
+    <masterLabel>Supplier</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

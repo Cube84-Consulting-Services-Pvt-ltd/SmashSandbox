@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CUST_PRD_GRP_CYTD_NETSALES_DIFF__c</fullName>
+    <externalId>false</externalId>
+    <formula>CUST_PRD_GRP_NetSales_CYTD__c - CUST_PRD_GRP_NetSales_PYTD__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>CUST_PRD_GRP_CYTD_NETSALES_DIFF</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

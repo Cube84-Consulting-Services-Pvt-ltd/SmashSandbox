@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>When_ever_case_closed_then_email_alert_is_send_to_the_case_owner</name>
+        <label>Case.When_ever_case_closed_then_email_alert_is_send_to_the_case_owner</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <actionName>Case.When_ever_case_closed_then_email_alert_is_send_to_the_case_owner</actionName>
+        <actionType>emailAlert</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <apiVersion>55.0</apiVersion>
+    <description>Migrated from the: Notify whenever Case Closed workflow rule
+Workflow rule description: Notification email to be send when ever case gets closed.&quot;</description>
+    <label>Notify whenever Case Closed_2</label>
+    <migratedFromWorkflowRuleName>Notify whenever Case Closed</migratedFromWorkflowRuleName>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>When_ever_case_closed_then_email_alert_is_send_to_the_case_owner</targetReference>
+        </connector>
+        <filterLogic>(1 OR 2 OR 3)</filterLogic>
+        <filters>
+            <field>Status</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Closed_Future</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Status</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Closed_REsolved</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Status</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Closed - Unsuccessful</stringValue>
+            </value>
+        </filters>
+        <object>Case</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Draft</status>
+</Flow>

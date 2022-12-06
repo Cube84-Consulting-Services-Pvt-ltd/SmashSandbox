@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Catalog_Request_Email_Alert_on_Update</name>
+        <label>Catalog Request Email Alert on Update</label>
+        <locationX>176</locationX>
+        <locationY>335</locationY>
+        <actionName>Contact.Catalog_Req_on_Update</actionName>
+        <actionType>emailAlert</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <apiVersion>55.0</apiVersion>
+    <description>WF to F</description>
+    <environments>Default</environments>
+    <interviewLabel>Catalog_Request_Email_Alert_on_Creation {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Catalog Request Email Alert on Updation</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Catalog_Request_Email_Alert_on_Update</targetReference>
+        </connector>
+        <filterFormula>OR(
+AND(PRIORVALUE({!$Record.Brewing_Catalog__c})=False,{!$Record.Brewing_Catalog__c},ISBLANK(PRIORVALUE({!$Record.Brewing_Catalog_Request_Date__c})),
+NOT(ISBLANK({!$Record.Brewing_Catalog_Request_Date__c}))),
+
+AND(PRIORVALUE({!$Record.Distilling_Catalog__c})=False,{!$Record.Distilling_Catalog__c},ISBLANK(PRIORVALUE({!$Record.Distilling_Catalog_Request_Date__c})),
+NOT(ISBLANK({!$Record.Distilling_Catalog_Request_Date__c}))),
+
+AND(PRIORVALUE({!$Record.Wine_Catalog__c})=False,{!$Record.Wine_Catalog__c},ISBLANK(PRIORVALUE({!$Record.Wine_Catalog_Request_Date__c})),NOT(ISBLANK({!$Record.Wine_Catalog_Request_Date__c})))
+)</filterFormula>
+        <object>Contact</object>
+        <recordTriggerType>Update</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

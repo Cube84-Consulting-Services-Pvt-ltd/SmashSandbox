@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Message_Created_Date__c</fullName>
+    <description>Displays the Date/Time this message was created in Salesforce, not necessarily the same as when it was received by Pardot.</description>
+    <externalId>false</externalId>
+    <label>Message Created Date</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>DateTime</type>
+</CustomField>
